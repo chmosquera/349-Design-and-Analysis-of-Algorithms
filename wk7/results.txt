@@ -1,0 +1,12 @@
+Edit distance = 2
+A:  ATCG
+B:  TCG
+score: 2
+diagonal: 2
+score: 2
+diagonal: 2
+score: 2
+diagonal: 2
+T T 0
+C C 0
+G G 0
