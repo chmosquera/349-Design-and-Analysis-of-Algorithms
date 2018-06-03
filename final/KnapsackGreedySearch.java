@@ -17,59 +17,22 @@ class KnapsackGreedySearch
 
 
     public static void MaxValuePerWeight(ArrayList<Integer> items, ArrayList<Integer> values, ArrayList<Integer> weights, int capacity) {
-    
+        System.out.println("Greedy: Max Value Per Weight");
         int n = items.size();
 
-        // generate subsets
-        int[] subsets = new int[1<<n];      // contains all sets
-        for (int i = 0; i < (1<<n); i++) {
-            int set = 0;
+        // get value to weight ratio of each object
+        System.out.println("item \t value \t weight \t value:weight");
+        ArrayList<Float> valueToWeight = new ArrayList<Float>(n);
+        for (int i = 0; i < n; i++) {
+            float v2w = (float)values.get(i) / (float)weights.get(i);
+            valueToWeight.add(v2w);
 
-            for (int j = 0; j < n; j++) {
-                if ((i & (1<<j)) > 0) {
-                    set = set | (i&(1<<j));
-                }
-            }
-            subsets[i] = set;
-
+            System.out.println((i+1) + " \t " + values.get(i) + " \t " + weights.get(i) + " \t " + valueToWeight.get(i));
         }
+        System.out.println();
 
-        // iterate through subsets - find solution to knapsack problem
-        System.out.println("printing entire set");
-        int value = 0,  weight = 0, set = 0;
-        ArrayList<Integer> setOfItems = new ArrayList<Integer>();
-        
-        for (int i = 0; i < (1<<n); i++) {      // loop through subsets
-            
-            ArrayList<Integer> temp = new ArrayList<Integer>();
-//            System.out.println(Integer.toBinaryString(subsets[i]));
+        // sort items in order of value to weight ratio
 
-            // get weight and value of set
-            int v = 0, w = 0;
-            
-            for (int j=0; j < n; j++) {
-                if ((subsets[i] & j) == j) {
-                   // System.out.println("\t item " + (j + 1) + " is included");
-//                    System.out.println("\t\t value: " + values.get(j) + " weight: " + weights.get(j));
-                    v += values.get(j);
-                    w += weights.get(j);
-                    temp.add(j+1);          // item # is offset by 1
-                }
-            }
 
-            if (w <= capacity && v >value) {    // check if new solution is found
-//                System.out.println("New solution found! " + Integer.toBinaryString(i));
-                value = v;
-                weight = w;
-                set = subsets[i];
-                setOfItems = temp;
-            }
-
-//            System.out.println("\t\t TotalValue: " + v + " TotalWeight: " + w);
-        }
-
-        System.out.println("Using Brute force, the best feasible solution found: Value " + value + ", Weight " + weight);
-        System.out.println(Arrays.toString(setOfItems.toArray()));
-
-    }
+    } 
 }
