@@ -61,7 +61,8 @@ class KnapsackAlgorithms
                     break;
                 case 3:     // dyn prog
                     KnapsackDynProg dynprog = new KnapsackDynProg();
-                    dynprog.Solve((Integer[])items.toArray(), (Integer[])values.toArray(), (Integer[])weights.toArray(), capacity);
+                    dynprog.Solve(items, values, weights, capacity);
+                    break;
             }
 
         }

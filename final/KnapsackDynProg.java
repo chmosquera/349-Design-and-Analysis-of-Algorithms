@@ -14,31 +14,31 @@ class KnapsackDynProg
 
     public KnapsackDynProg() {}
 
-    public void Solve(int[] items, int[] values, int[] weights, int capacity) {
-        int n = items.length;
+    public void Solve(ArrayList<Integer> items, ArrayList<Integer> values, ArrayList<Integer> weights, int capacity) {
+        int n = items.size();
         int[][] sub_solns = new int[n+1][capacity+1];      // table to store solutions - offset by 1 to include row/col of 0's
-        Arrays.fill(sub_solns, 0);
-        int tot_value = 0, tot_weight = 0;
-        int[][] predecessors = new int[n][capacity];      // for rod of length i, cut piece at p[i]
-        int[] ITEMS = new int[n+1];                     // prepend 0th index to arrays to include row/col of 0's
-        int[] VALUES = Arrays.copyOf(values, n+1);
-        int[] WEIGHTS = Arrays.copyOf(weights, n+1);
-        System.arraycopy(items, 0, ITEMS, 1, n+1);
-        System.arraycopy(values, 0, VALUES, 1, n+1);
-        System.arraycopy(weights, 0, WEIGHTS, 1, n+1);
 
+        // fill array with 0;
+        for (int[] row : sub_solns) {
+            Arrays.fill(row, 0);
+        }
+        int tot_value = 0, tot_weight = 0;
+
+        items.add(0,0);     // prepend 0 to get row/col of 0's
+        values.add(0,0);
+        weights.add(0,0);
         // bottom up approach - recursively compute the max value found for smaller caps
         //      which will be used to computer max value for larger caps
         for (int c = 1; c < capacity; c++) {
             for (int i = 1; i < n; i++) {
                 int v = 0;
                 // can we pick up this item?
-                if (WEIGHTS[i] < c) {
-                    int w = c - WEIGHTS[i];     // remaining weight if item picked up
+                if (weights.get(i) < c) {
+                    int w = c - weights.get(i);     // remaining weight if item picked up
 
                     // should we pick up this item?
-                    if (sub_solns[i-1][c] < (VALUES[i] + sub_solns[i-1][w])) {
-                        sub_solns[i][c] = VALUES[i] + sub_solns[i-1][w];
+                    if (sub_solns[i-1][c] < (values.get(i) + sub_solns[i-1][w])) {
+                        sub_solns[i][c] = values.get(i) + sub_solns[i-1][w];
                     } else {
                         sub_solns[i][c] = sub_solns[i-1][c];
                     }
@@ -54,8 +54,8 @@ class KnapsackDynProg
                 
             } else {
                 soln.add(i);
-                tot_value += VALUES[i];
-                tot_weight += WEIGHTS[i];
+                tot_value += values.get(i);
+                tot_weight += weights.get(i);
             }
         }
        
