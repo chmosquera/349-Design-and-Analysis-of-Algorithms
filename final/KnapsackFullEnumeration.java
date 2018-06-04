@@ -31,29 +31,26 @@ class KnapsackFullEnumeration
                 }
             }
             subsets[i] = set;
-
         }
 
         // iterate through subsets - find solution to knapsack problem
-        System.out.println("printing entire set");
         int value = 0,  weight = 0, set = 0;
         ArrayList<Integer> setOfItems = new ArrayList<Integer>();
         
         for (int i = 0; i < (1<<n); i++) {      // loop through subsets
-            
             // get weight and value of set
             ArrayList<Integer> temp = new ArrayList<Integer>();
             int v = 0, w = 0;
             
             for (int j=0; j < n; j++) {
-                if ((subsets[i] & j) == j) {
+                if ((subsets[i] & (1<<j)) > 0) {
                     v += values.get(j);
                     w += weights.get(j);
                     temp.add(j+1);          // item # is offset by 1
                 }
             }
 
-            if (w <= capacity && v >value) {    // check if new solution is found
+            if (w <= capacity && v >value) {    // check if new solution is found   
                 value = v;
                 weight = w;
                 set = subsets[i];

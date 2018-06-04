@@ -17,10 +17,17 @@ class KnapsackAlgorithms
 
     public static void main(String args[]) {
 
+        if (args.length < 2) {
+            System.out.println("Usage: KnapsackAlgorithms <file> <approach>");
+            System.out.println("(approach: 1 - enum | 2 - greedy | 3 - dyn prog | 4 - b'n'b)");
+            return;
+        }
+
+        int approachID = Integer.parseInt(args[1]);
+        File file = new File(args[0]);
 
         try {
 
-            File file = new File("easy20.txt");
             Scanner sc = new Scanner(file);
             int item_cnt = sc.nextInt();            // n
 
@@ -35,19 +42,27 @@ class KnapsackAlgorithms
             }
             int capacity = sc.nextInt();            // capacity
 
-          /*  System.out.println(item_cnt);
-            for(int i = 0; i < item_cnt; i++) {
-                System.out.println(items.get(i) + "\t" +  values.get(i) + "\t" +  weights.get(i)); 
+            // for testing smaller arrays
+            ArrayList<Integer> t_i = new ArrayList<Integer>();
+            t_i.add(1); t_i.add(2); t_i.add(3); 
+           ArrayList<Integer> t_v = new ArrayList<Integer>();
+            t_v.add(4); t_v.add(5); t_v.add(5); 
+            ArrayList<Integer> t_w = new ArrayList<Integer>();
+            t_w.add(2); t_w.add(4); t_w.add(1);
+
+            switch (approachID) {
+                case 1:     // full enumeration
+                    KnapsackFullEnumeration fullenum = new KnapsackFullEnumeration();
+                    fullenum.BruteForce(items, values, weights, capacity);
+                    break;
+                case 2:     // greedy
+                    KnapsackGreedySearch greedy = new KnapsackGreedySearch();
+                    greedy.MaxValuePerWeight(items, values, weights, capacity);
+                    break;
+                case 3:     // dyn prog
+                    KnapsackDynProg dynprog = new KnapsackDynProg();
+                    dynprog.Solve((Integer[])items.toArray(), (Integer[])values.toArray(), (Integer[])weights.toArray(), capacity);
             }
-            System.out.println(capacity);
-        */
-        
-            // exhaustive
-            KnapsackFullEnumeration method1 = new KnapsackFullEnumeration();
-            method1.BruteForce(items, values, weights, capacity);
-            // Greedy
-            KnapsackGreedySearch method2 = new KnapsackGreedySearch();
-            method2.MaxValuePerWeight(items, values, weights, capacity);
 
         }
         catch(FileNotFoundException e) {
@@ -55,12 +70,6 @@ class KnapsackAlgorithms
         }
 
 
-        ArrayList<Integer> t_i = new ArrayList<Integer>();
-        t_i.add(1); t_i.add(2); t_i.add(3); 
-        ArrayList<Integer> t_v = new ArrayList<Integer>();
-        t_v.add(4); t_v.add(5); t_v.add(5); 
-        ArrayList<Integer> t_w = new ArrayList<Integer>();
-        t_w.add(2); t_w.add(4); t_w.add(1);
 //        ExhaustiveMethod(t_i, t_v, t_w, 6);
 //
 
