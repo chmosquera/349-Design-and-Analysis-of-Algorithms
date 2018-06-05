@@ -41,15 +41,25 @@ class KnapsackDynProg
                     } else {
                         sub_solns[i][c] = sub_solns[i-1][c];
                     }
+                    //System.out.println("this item:\ti: " + i + "\tv: " + values.get(i) + "\tw: " + weights.get(i)  + "\tvalue thus far: " + sub_solns[i][c]);
+                    //System.out.println("prev item:\ti: " + (i-1) + "\tv: " + values.get(i-1) + "\tw: " + weights.get(i-1)  + "\tvalue thus far: " + sub_solns[i-1][c]);
                 } else {
                     sub_solns[i][c] = sub_solns[i-1][c];
                 }
             }
         }
 
+        // testing
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < capacity; j++) {
+               // System.out.println("item: " + i + "\tcap: " + j + "\tvalue up to this point:" + sub_solns[i][j]);
+            }
+        }
+
         // trace back
         ArrayList<Integer> soln = new ArrayList<Integer>();
         int i = n, c = capacity;        // start at last item & at capacity
+       // System.out.println("i = " + n + "\tc: " + capacity  + " last solution: " + sub_solns[n][c]);
         while (c > 0 && i > 0) {
             if (sub_solns[i][c] == sub_solns[i-1][c]) {     // i was not picked up
              i--;
