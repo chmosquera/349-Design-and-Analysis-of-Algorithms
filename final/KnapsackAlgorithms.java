@@ -66,8 +66,8 @@ class KnapsackAlgorithms
                 case 4:
 
                     KnapsackBnB bnb = new KnapsackBnB();
- //                   bnb.Solve(items, values, weights, capacity);
-                    bnb.Solve(t_i, t_v, t_w, 5);
+                    bnb.Solve(items, values, weights, capacity);
+ //                   bnb.Solve(t_i, t_v, t_w, 5);
            }
 
         }

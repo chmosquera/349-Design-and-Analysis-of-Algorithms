@@ -162,7 +162,7 @@ class KnapsackBnB
             if (inState.bound > maxValue) {
                 Q.add(inState);
             }
-            if (exState.bound > maxValue) {
+            if (exState.bound > curState.totval) {
                 Q.add(exState);
             }
 
