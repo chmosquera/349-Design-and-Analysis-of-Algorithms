@@ -16,15 +16,14 @@ class KnapsackBnB
 
     public class Node implements Comparable<Node>{
 
-        int itemlvl, totval, totwgt;
+        int lvl, totval, totwgt;
         float bound, valToWgt;
 
         Node() {
-            this.itemlvl = 0;					// ID in tree
+            this.lvl = 0;					// ID in tree
             this.totval = 0;			                // total value
             this.totwgt = 0;
             this.bound = 0;
-            this.valToWgt = 0;
         }
 
         public int compareTo(Node o) {
@@ -34,7 +33,7 @@ class KnapsackBnB
         }
     
         void Print() {
-            System.out.println("\t\tItem Level: \t" + itemlvl);
+            System.out.println("\t\tTree Level: \t" + lvl);
             System.out.println("\t\tTotal Value: \t" + totval);
             System.out.println("\t\tTotal Weight: \t" + totwgt);
             System.out.println("\t\tUpper Bound: \t" + bound);
@@ -44,11 +43,11 @@ class KnapsackBnB
 
     public class Item implements Comparable<Item>{
         
-        int item, val, wgt;
+        int id, val, wgt;
         float v2w;
 
-        Item(int item, int val, int wgt, float v2w) {
-            this.item = item;
+        Item(int id, int val, int wgt, float v2w) {
+            this.id = id;
             this.val = val;
             this.wgt = wgt;
             this.v2w = v2w;
@@ -60,7 +59,7 @@ class KnapsackBnB
             return 0;
         }
         void Print() {
-            System.out.println("Item: " + item + "\tval: " + val + "\twgt: " + wgt + "\tv2w: " + v2w);
+            System.out.println("Item: " + id + "\tval: " + val + "\twgt: " + wgt + "\tv2w: " + v2w);
         }
     }
 
@@ -105,16 +104,80 @@ class KnapsackBnB
         for (int i = 0; i < n; i++) {
             float v2w = (float)values.get(i)/(float)weights.get(i);
             Item it = new Item(items.get(i), values.get(i), weights.get(i), v2w);
+            System.out.println("items id = : " + it.id);
             itemsList.add(it);
             it.Print();
         }
 
         Collections.sort(itemsList);
+
+        // Sorting
         System.out.println("List of items (sorted): ");
         for (int i = 0; i < n; i++) {
             (itemsList.get(i)).Print();
         }
+        
 
+        // setup
+        Node root = new Node();
+        root.lvl = -1;
+        root.bound = capacity * (itemsList.get(0)).v2w;
+        Node curState = new Node();
+
+        PriorityQueue<Node> Q = new PriorityQueue<Node>();
+        Q.add(root);
+        int maxValue = 0;           // max value in knapsack found so far
+
+        while ((curState = Q.poll()) != null) {    // are there more states in the tree to examine?
+            int treeLvl = curState.lvl;               // current level in tree
+
+            if (treeLvl >= n-1) {                     // are there more items we can pick up?
+                continue;
+            }
+
+            // go to the next level (contains the next best val to wgt ratio)
+            treeLvl++;
+            System.out.println("Level: " + treeLvl);
+            int itemId = (itemsList.get(curState.lvl + 1)).id - 1;     // offset by 1 bc item id's start at 1
+            System.out.println("\tNext Level: " + treeLvl  + "\tMaxValue: " + maxValue);       // Test
+
+            Node inState = new Node();
+            Node exState = new Node();
+            inState.lvl = exState.lvl = treeLvl;
+
+            Item thisItem = itemsList.get(itemId);
+            thisItem.Print();
+            System.out.println("\tcurState: ");
+            curState.Print();
+            
+            inState.totval = curState.totval + thisItem.val;                // state includes item
+            inState.totwgt = curState.totwgt + thisItem.wgt;
+            inState.bound = inState.totval + ((capacity - inState.totwgt) * (itemsList.get(treeLvl+1)).v2w);
+
+            System.out.print("\tinState: ");
+            inState.Print();
+
+            exState.totval = curState.totval;                               // state excludes item
+            exState.totwgt = curState.totwgt;
+            exState.bound = curState.totval + ((capacity - exState.totwgt) * (itemsList.get(treeLvl+1)).v2w);
+            
+            System.out.println("\texState: " );
+            exState.Print();
+
+            //Update Maxvalue if this node is valid and increases maxValue
+            if (inState.totval > maxValue && inState.totwgt <= capacity) {
+                 maxValue = inState.totval;
+            }
+            System.out.println("\tUpdated Max value: " + maxValue);
+
+            // Decide whether it is worth traversing down these states further
+            if (inState.bound > maxValue) {
+                Q.add(inState);
+            }
+            if (exState.bound > maxValue) {
+                Q.add(exState);
+            }
+        }
         /*
         // setup
         Node root = new Node();                 // setup starting point of tree
