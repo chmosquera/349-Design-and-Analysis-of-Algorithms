@@ -1,0 +1,2526 @@
+Level: -1	Next Level: 0	MaxValue: 0
+totwgt: 0 wgt: 29
+	curState: 
+		Item Level: 	-1
+		Total Value: 	0
+		Total Weight: 	0
+		Upper Bound: 	1644.2759
+
+	inState: 
+		Item Level: 	0
+		Total Value: 	91
+		Total Weight: 	29
+		Upper Bound: 	547.9231
+
+	exState: 
+		Item Level: 	0
+		Total Value: 	0
+		Total Weight: 	0
+		Upper Bound: 	483.69232
+
+	Updated Max value: 91
+Level: 0	Next Level: 1	MaxValue: 91
+totwgt: 29 wgt: 65
+	curState: 
+		Item Level: 	0
+		Total Value: 	91
+		Total Weight: 	29
+		Upper Bound: 	547.9231
+
+	inState: 
+		Item Level: 	1
+		Total Value: 	151
+		Total Weight: 	94
+		Upper Bound: 	520.43665
+
+	exState: 
+		Item Level: 	1
+		Total Value: 	91
+		Total Weight: 	29
+		Upper Bound: 	516.28174
+
+	Updated Max value: 151
+Level: 1	Next Level: 2	MaxValue: 151
+totwgt: 94 wgt: 71
+	curState: 
+		Item Level: 	1
+		Total Value: 	151
+		Total Weight: 	94
+		Upper Bound: 	520.43665
+
+	inState: 
+		Item Level: 	2
+		Total Value: 	212
+		Total Weight: 	165
+		Upper Bound: 	265.85
+
+	exState: 
+		Item Level: 	2
+		Total Value: 	151
+		Total Weight: 	94
+		Upper Bound: 	215.5
+
+	Updated Max value: 212
+Level: 2	Next Level: 3	MaxValue: 212
+totwgt: 165 wgt: 60
+	curState: 
+		Item Level: 	2
+		Total Value: 	212
+		Total Weight: 	165
+		Upper Bound: 	265.85
+
+	inState: 
+		Item Level: 	3
+		Total Value: 	221
+		Total Weight: 	225
+		Upper Bound: 	745.9111
+
+	exState: 
+		Item Level: 	3
+		Total Value: 	212
+		Total Weight: 	165
+		Upper Bound: 	842.24445
+
+	Updated Max value: 221
+Level: 3	Next Level: 4	MaxValue: 221
+totwgt: 225 wgt: 45
+	curState: 
+		Item Level: 	3
+		Total Value: 	221
+		Total Weight: 	225
+		Upper Bound: 	745.9111
+
+	inState: 
+		Item Level: 	4
+		Total Value: 	300
+		Total Weight: 	270
+		Upper Bound: 	464.5634
+
+	exState: 
+		Item Level: 	4
+		Total Value: 	221
+		Total Weight: 	225
+		Upper Bound: 	414.71832
+
+	Updated Max value: 300
+Level: 3	Next Level: 4	MaxValue: 300
+totwgt: 165 wgt: 45
+	curState: 
+		Item Level: 	3
+		Total Value: 	212
+		Total Weight: 	165
+		Upper Bound: 	842.24445
+
+	inState: 
+		Item Level: 	4
+		Total Value: 	291
+		Total Weight: 	210
+		Upper Bound: 	494.43665
+
+	exState: 
+		Item Level: 	4
+		Total Value: 	212
+		Total Weight: 	165
+		Upper Bound: 	444.59155
+
+	Updated Max value: 300
+Level: 2	Next Level: 3	MaxValue: 300
+totwgt: 94 wgt: 60
+	curState: 
+		Item Level: 	2
+		Total Value: 	151
+		Total Weight: 	94
+		Upper Bound: 	215.5
+
+	inState: 
+		Item Level: 	3
+		Total Value: 	160
+		Total Weight: 	154
+		Upper Bound: 	809.55554
+
+	exState: 
+		Item Level: 	3
+		Total Value: 	151
+		Total Weight: 	94
+		Upper Bound: 	905.88885
+
+	Updated Max value: 300
+Level: 3	Next Level: 4	MaxValue: 300
+totwgt: 154 wgt: 45
+	curState: 
+		Item Level: 	3
+		Total Value: 	160
+		Total Weight: 	154
+		Upper Bound: 	809.55554
+
+	inState: 
+		Item Level: 	4
+		Total Value: 	239
+		Total Weight: 	199
+		Upper Bound: 	449.5634
+
+	exState: 
+		Item Level: 	4
+		Total Value: 	160
+		Total Weight: 	154
+		Upper Bound: 	399.71832
+
+	Updated Max value: 300
+Level: 3	Next Level: 4	MaxValue: 300
+totwgt: 94 wgt: 45
+	curState: 
+		Item Level: 	3
+		Total Value: 	151
+		Total Weight: 	94
+		Upper Bound: 	905.88885
+
+	inState: 
+		Item Level: 	4
+		Total Value: 	230
+		Total Weight: 	139
+		Upper Bound: 	479.43665
+
+	exState: 
+		Item Level: 	4
+		Total Value: 	151
+		Total Weight: 	94
+		Upper Bound: 	429.59155
+
+	Updated Max value: 300
+Level: 1	Next Level: 2	MaxValue: 300
+totwgt: 29 wgt: 71
+	curState: 
+		Item Level: 	1
+		Total Value: 	91
+		Total Weight: 	29
+		Upper Bound: 	516.28174
+
+	inState: 
+		Item Level: 	2
+		Total Value: 	152
+		Total Weight: 	100
+		Upper Bound: 	215.6
+
+	exState: 
+		Item Level: 	2
+		Total Value: 	91
+		Total Weight: 	29
+		Upper Bound: 	165.25
+
+	Updated Max value: 300
+Level: 4	Next Level: 5	MaxValue: 300
+totwgt: 94 wgt: 71
+	curState: 
+		Item Level: 	4
+		Total Value: 	151
+		Total Weight: 	94
+		Upper Bound: 	429.59155
+
+	inState: 
+		Item Level: 	5
+		Total Value: 	197
+		Total Weight: 	165
+		Upper Bound: 	507.04547
+
+	exState: 
+		Item Level: 	5
+		Total Value: 	151
+		Total Weight: 	94
+		Upper Bound: 	522.36365
+
+	Updated Max value: 300
+Level: 5	Next Level: 6	MaxValue: 300
+totwgt: 165 wgt: 22
+	curState: 
+		Item Level: 	5
+		Total Value: 	197
+		Total Weight: 	165
+		Upper Bound: 	507.04547
+
+	inState: 
+		Item Level: 	6
+		Total Value: 	216
+		Total Weight: 	187
+		Upper Bound: 	414.0309
+
+	exState: 
+		Item Level: 	6
+		Total Value: 	197
+		Total Weight: 	165
+		Upper Bound: 	407.95874
+
+	Updated Max value: 300
+Level: 5	Next Level: 6	MaxValue: 300
+totwgt: 94 wgt: 22
+	curState: 
+		Item Level: 	5
+		Total Value: 	151
+		Total Weight: 	94
+		Upper Bound: 	522.36365
+
+	inState: 
+		Item Level: 	6
+		Total Value: 	170
+		Total Weight: 	116
+		Upper Bound: 	409.75256
+
+	exState: 
+		Item Level: 	6
+		Total Value: 	151
+		Total Weight: 	94
+		Upper Bound: 	403.68042
+
+	Updated Max value: 300
+Level: 6	Next Level: 7	MaxValue: 300
+totwgt: 187 wgt: 97
+	curState: 
+		Item Level: 	6
+		Total Value: 	216
+		Total Weight: 	187
+		Upper Bound: 	414.0309
+
+	inState: 
+		Item Level: 	7
+		Total Value: 	273
+		Total Weight: 	284
+		Upper Bound: 	593.0
+
+	exState: 
+		Item Level: 	7
+		Total Value: 	216
+		Total Weight: 	187
+		Upper Bound: 	665.3334
+
+	Updated Max value: 300
+Level: 7	Next Level: 8	MaxValue: 300
+totwgt: 284 wgt: 6
+	curState: 
+		Item Level: 	7
+		Total Value: 	273
+		Total Weight: 	284
+		Upper Bound: 	593.0
+
+	inState: 
+		Item Level: 	8
+		Total Value: 	281
+		Total Weight: 	290
+		Upper Bound: 	497.0
+
+	exState: 
+		Item Level: 	8
+		Total Value: 	273
+		Total Weight: 	284
+		Upper Bound: 	494.53845
+
+	Updated Max value: 300
+Level: 7	Next Level: 8	MaxValue: 300
+totwgt: 187 wgt: 6
+	curState: 
+		Item Level: 	7
+		Total Value: 	216
+		Total Weight: 	187
+		Upper Bound: 	665.3334
+
+	inState: 
+		Item Level: 	8
+		Total Value: 	224
+		Total Weight: 	193
+		Upper Bound: 	529.53845
+
+	exState: 
+		Item Level: 	8
+		Total Value: 	216
+		Total Weight: 	187
+		Upper Bound: 	527.0769
+
+	Updated Max value: 300
+Level: 6	Next Level: 7	MaxValue: 300
+totwgt: 116 wgt: 97
+	curState: 
+		Item Level: 	6
+		Total Value: 	170
+		Total Weight: 	116
+		Upper Bound: 	409.75256
+
+	inState: 
+		Item Level: 	7
+		Total Value: 	227
+		Total Weight: 	213
+		Upper Bound: 	641.6667
+
+	exState: 
+		Item Level: 	7
+		Total Value: 	170
+		Total Weight: 	116
+		Upper Bound: 	714.0
+
+	Updated Max value: 300
+Level: 7	Next Level: 8	MaxValue: 300
+totwgt: 213 wgt: 6
+	curState: 
+		Item Level: 	7
+		Total Value: 	227
+		Total Weight: 	213
+		Upper Bound: 	641.6667
+
+	inState: 
+		Item Level: 	8
+		Total Value: 	235
+		Total Weight: 	219
+		Upper Bound: 	516.53845
+
+	exState: 
+		Item Level: 	8
+		Total Value: 	227
+		Total Weight: 	213
+		Upper Bound: 	514.0769
+
+	Updated Max value: 300
+Level: 7	Next Level: 8	MaxValue: 300
+totwgt: 116 wgt: 6
+	curState: 
+		Item Level: 	7
+		Total Value: 	170
+		Total Weight: 	116
+		Upper Bound: 	714.0
+
+	inState: 
+		Item Level: 	8
+		Total Value: 	178
+		Total Weight: 	122
+		Upper Bound: 	549.0769
+
+	exState: 
+		Item Level: 	8
+		Total Value: 	170
+		Total Weight: 	116
+		Upper Bound: 	546.61536
+
+	Updated Max value: 300
+Level: 6	Next Level: 7	MaxValue: 300
+totwgt: 94 wgt: 97
+	curState: 
+		Item Level: 	6
+		Total Value: 	151
+		Total Weight: 	94
+		Upper Bound: 	403.68042
+
+	inState: 
+		Item Level: 	7
+		Total Value: 	208
+		Total Weight: 	191
+		Upper Bound: 	652.0
+
+	exState: 
+		Item Level: 	7
+		Total Value: 	151
+		Total Weight: 	94
+		Upper Bound: 	724.3334
+
+	Updated Max value: 300
+Level: 7	Next Level: 8	MaxValue: 300
+totwgt: 191 wgt: 6
+	curState: 
+		Item Level: 	7
+		Total Value: 	208
+		Total Weight: 	191
+		Upper Bound: 	652.0
+
+	inState: 
+		Item Level: 	8
+		Total Value: 	216
+		Total Weight: 	197
+		Upper Bound: 	517.8462
+
+	exState: 
+		Item Level: 	8
+		Total Value: 	208
+		Total Weight: 	191
+		Upper Bound: 	515.38464
+
+	Updated Max value: 300
+Level: 7	Next Level: 8	MaxValue: 300
+totwgt: 94 wgt: 6
+	curState: 
+		Item Level: 	7
+		Total Value: 	151
+		Total Weight: 	94
+		Upper Bound: 	724.3334
+
+	inState: 
+		Item Level: 	8
+		Total Value: 	159
+		Total Weight: 	100
+		Upper Bound: 	550.38464
+
+	exState: 
+		Item Level: 	8
+		Total Value: 	151
+		Total Weight: 	94
+		Upper Bound: 	547.9231
+
+	Updated Max value: 300
+Level: 6	Next Level: 7	MaxValue: 300
+totwgt: 165 wgt: 97
+	curState: 
+		Item Level: 	6
+		Total Value: 	197
+		Total Weight: 	165
+		Upper Bound: 	407.95874
+
+	inState: 
+		Item Level: 	7
+		Total Value: 	254
+		Total Weight: 	262
+		Upper Bound: 	603.3334
+
+	exState: 
+		Item Level: 	7
+		Total Value: 	197
+		Total Weight: 	165
+		Upper Bound: 	675.6667
+
+	Updated Max value: 300
+Level: 7	Next Level: 8	MaxValue: 300
+totwgt: 262 wgt: 6
+	curState: 
+		Item Level: 	7
+		Total Value: 	254
+		Total Weight: 	262
+		Upper Bound: 	603.3334
+
+	inState: 
+		Item Level: 	8
+		Total Value: 	262
+		Total Weight: 	268
+		Upper Bound: 	498.30768
+
+	exState: 
+		Item Level: 	8
+		Total Value: 	254
+		Total Weight: 	262
+		Upper Bound: 	495.84616
+
+	Updated Max value: 300
+Level: 7	Next Level: 8	MaxValue: 300
+totwgt: 165 wgt: 6
+	curState: 
+		Item Level: 	7
+		Total Value: 	197
+		Total Weight: 	165
+		Upper Bound: 	675.6667
+
+	inState: 
+		Item Level: 	8
+		Total Value: 	205
+		Total Weight: 	171
+		Upper Bound: 	530.8462
+
+	exState: 
+		Item Level: 	8
+		Total Value: 	197
+		Total Weight: 	165
+		Upper Bound: 	528.38464
+
+	Updated Max value: 300
+Level: 8	Next Level: 9	MaxValue: 300
+totwgt: 262 wgt: 91
+	curState: 
+		Item Level: 	8
+		Total Value: 	254
+		Total Weight: 	262
+		Upper Bound: 	495.84616
+
+	inState: 
+		Item Level: 	9
+		Total Value: 	338
+		Total Weight: 	353
+		Upper Bound: 	398.0
+
+	exState: 
+		Item Level: 	9
+		Total Value: 	254
+		Total Weight: 	262
+		Upper Bound: 	345.9298
+
+	Updated Max value: 338
+Level: 9	Next Level: 10	MaxValue: 338
+totwgt: 353 wgt: 57
+	curState: 
+		Item Level: 	9
+		Total Value: 	338
+		Total Weight: 	353
+		Upper Bound: 	398.0
+
+	inState: 
+		Item Level: 	10
+		Total Value: 	358
+		Total Weight: 	410
+		Upper Bound: 	494.8
+
+	exState: 
+		Item Level: 	10
+		Total Value: 	338
+		Total Weight: 	353
+		Upper Bound: 	543.2
+
+	Updated Max value: 358
+Level: 10	Next Level: 11	MaxValue: 358
+totwgt: 410 wgt: 60
+	curState: 
+		Item Level: 	10
+		Total Value: 	358
+		Total Weight: 	410
+		Upper Bound: 	494.8
+
+	inState: 
+		Item Level: 	11
+		Total Value: 	430
+		Total Weight: 	470
+		Upper Bound: 	465.26532
+
+	exState: 
+		Item Level: 	11
+		Total Value: 	358
+		Total Weight: 	410
+		Upper Bound: 	432.44897
+
+	Updated Max value: 430
+Level: 10	Next Level: 11	MaxValue: 430
+totwgt: 353 wgt: 60
+	curState: 
+		Item Level: 	10
+		Total Value: 	338
+		Total Weight: 	353
+		Upper Bound: 	543.2
+
+	inState: 
+		Item Level: 	11
+		Total Value: 	410
+		Total Weight: 	413
+		Upper Bound: 	482.4898
+
+	exState: 
+		Item Level: 	11
+		Total Value: 	338
+		Total Weight: 	353
+		Upper Bound: 	449.67346
+
+	Updated Max value: 430
+Level: 9	Next Level: 10	MaxValue: 430
+totwgt: 262 wgt: 57
+	curState: 
+		Item Level: 	9
+		Total Value: 	254
+		Total Weight: 	262
+		Upper Bound: 	345.9298
+
+	inState: 
+		Item Level: 	10
+		Total Value: 	274
+		Total Weight: 	319
+		Upper Bound: 	520.0
+
+	exState: 
+		Item Level: 	10
+		Total Value: 	254
+		Total Weight: 	262
+		Upper Bound: 	568.4
+
+	Updated Max value: 430
+Level: 10	Next Level: 11	MaxValue: 430
+totwgt: 319 wgt: 60
+	curState: 
+		Item Level: 	10
+		Total Value: 	274
+		Total Weight: 	319
+		Upper Bound: 	520.0
+
+	inState: 
+		Item Level: 	11
+		Total Value: 	346
+		Total Weight: 	379
+		Upper Bound: 	440.69388
+
+	exState: 
+		Item Level: 	11
+		Total Value: 	274
+		Total Weight: 	319
+		Upper Bound: 	407.87756
+
+	Updated Max value: 430
+Level: 10	Next Level: 11	MaxValue: 430
+totwgt: 262 wgt: 60
+	curState: 
+		Item Level: 	10
+		Total Value: 	254
+		Total Weight: 	262
+		Upper Bound: 	568.4
+
+	inState: 
+		Item Level: 	11
+		Total Value: 	326
+		Total Weight: 	322
+		Upper Bound: 	457.91837
+
+	exState: 
+		Item Level: 	11
+		Total Value: 	254
+		Total Weight: 	262
+		Upper Bound: 	425.10205
+
+	Updated Max value: 430
+Level: 11	Next Level: 12	MaxValue: 430
+totwgt: 379 wgt: 49
+	curState: 
+		Item Level: 	11
+		Total Value: 	346
+		Total Weight: 	379
+		Upper Bound: 	440.69388
+
+	inState: 
+		Item Level: 	12
+		Total Value: 	378
+		Total Weight: 	428
+		Upper Bound: 	411.4382
+
+	exState: 
+		Item Level: 	12
+		Total Value: 	346
+		Total Weight: 	379
+		Upper Bound: 	396.5056
+
+	Updated Max value: 430
+Level: 11	Next Level: 12	MaxValue: 430
+totwgt: 322 wgt: 49
+	curState: 
+		Item Level: 	11
+		Total Value: 	326
+		Total Weight: 	322
+		Upper Bound: 	457.91837
+
+	inState: 
+		Item Level: 	12
+		Total Value: 	358
+		Total Weight: 	371
+		Upper Bound: 	411.29214
+
+	exState: 
+		Item Level: 	12
+		Total Value: 	326
+		Total Weight: 	322
+		Upper Bound: 	396.35956
+
+	Updated Max value: 430
+Level: 11	Next Level: 12	MaxValue: 430
+totwgt: 353 wgt: 49
+	curState: 
+		Item Level: 	11
+		Total Value: 	338
+		Total Weight: 	353
+		Upper Bound: 	449.67346
+
+	inState: 
+		Item Level: 	12
+		Total Value: 	370
+		Total Weight: 	402
+		Upper Bound: 	412.4944
+
+	exState: 
+		Item Level: 	12
+		Total Value: 	338
+		Total Weight: 	353
+		Upper Bound: 	397.5618
+
+	Updated Max value: 430
+Level: 11	Next Level: 12	MaxValue: 430
+totwgt: 413 wgt: 49
+	curState: 
+		Item Level: 	11
+		Total Value: 	410
+		Total Weight: 	413
+		Upper Bound: 	482.4898
+
+	inState: 
+		Item Level: 	12
+		Total Value: 	442
+		Total Weight: 	462
+		Upper Bound: 	463.59552
+
+	exState: 
+		Item Level: 	12
+		Total Value: 	410
+		Total Weight: 	413
+		Upper Bound: 	448.66293
+
+	Updated Max value: 442
+Level: 12	Next Level: 13	MaxValue: 442
+totwgt: 462 wgt: 89
+	curState: 
+		Item Level: 	12
+		Total Value: 	442
+		Total Weight: 	462
+		Upper Bound: 	463.59552
+
+	exState: 
+		Item Level: 	13
+		Total Value: 	442
+		Total Weight: 	462
+		Upper Bound: 	1310.0
+
+	Updated Max value: 442
+Level: 13	Next Level: 14	MaxValue: 442
+totwgt: 462 wgt: 2
+	curState: 
+		Item Level: 	13
+		Total Value: 	442
+		Total Weight: 	462
+		Upper Bound: 	1310.0
+
+	inState: 
+		Item Level: 	14
+		Total Value: 	470
+		Total Weight: 	464
+		Upper Bound: 	632.0
+
+	exState: 
+		Item Level: 	14
+		Total Value: 	442
+		Total Weight: 	462
+		Upper Bound: 	609.4
+
+	Updated Max value: 470
+Level: 12	Next Level: 13	MaxValue: 470
+totwgt: 413 wgt: 89
+	curState: 
+		Item Level: 	12
+		Total Value: 	410
+		Total Weight: 	413
+		Upper Bound: 	448.66293
+
+	inState: 
+		Item Level: 	13
+		Total Value: 	441
+		Total Weight: 	502
+		Upper Bound: 	749.0
+
+	exState: 
+		Item Level: 	13
+		Total Value: 	410
+		Total Weight: 	413
+		Upper Bound: 	1964.0
+
+	Updated Max value: 470
+Level: 13	Next Level: 14	MaxValue: 470
+totwgt: 502 wgt: 2
+	curState: 
+		Item Level: 	13
+		Total Value: 	441
+		Total Weight: 	502
+		Upper Bound: 	749.0
+
+	inState: 
+		Item Level: 	14
+		Total Value: 	469
+		Total Weight: 	504
+		Upper Bound: 	523.0
+
+	exState: 
+		Item Level: 	14
+		Total Value: 	441
+		Total Weight: 	502
+		Upper Bound: 	500.4
+
+	Updated Max value: 470
+Level: 13	Next Level: 14	MaxValue: 470
+totwgt: 413 wgt: 2
+	curState: 
+		Item Level: 	13
+		Total Value: 	410
+		Total Weight: 	413
+		Upper Bound: 	1964.0
+
+	inState: 
+		Item Level: 	14
+		Total Value: 	438
+		Total Weight: 	415
+		Upper Bound: 	732.30005
+
+	exState: 
+		Item Level: 	14
+		Total Value: 	410
+		Total Weight: 	413
+		Upper Bound: 	709.7
+
+	Updated Max value: 470
+Level: 11	Next Level: 12	MaxValue: 470
+totwgt: 470 wgt: 49
+	curState: 
+		Item Level: 	11
+		Total Value: 	430
+		Total Weight: 	470
+		Upper Bound: 	465.26532
+
+	inState: 
+		Item Level: 	12
+		Total Value: 	462
+		Total Weight: 	519
+		Upper Bound: 	463.74158
+
+	exState: 
+		Item Level: 	12
+		Total Value: 	430
+		Total Weight: 	470
+		Upper Bound: 	448.809
+
+	Updated Max value: 470
+Level: 11	Next Level: 12	MaxValue: 470
+totwgt: 410 wgt: 49
+	curState: 
+		Item Level: 	11
+		Total Value: 	358
+		Total Weight: 	410
+		Upper Bound: 	432.44897
+
+	inState: 
+		Item Level: 	12
+		Total Value: 	390
+		Total Weight: 	459
+		Upper Bound: 	412.64044
+
+	exState: 
+		Item Level: 	12
+		Total Value: 	358
+		Total Weight: 	410
+		Upper Bound: 	397.70786
+
+	Updated Max value: 470
+Level: 8	Next Level: 9	MaxValue: 470
+totwgt: 219 wgt: 91
+	curState: 
+		Item Level: 	8
+		Total Value: 	235
+		Total Weight: 	219
+		Upper Bound: 	516.53845
+
+	inState: 
+		Item Level: 	9
+		Total Value: 	319
+		Total Weight: 	310
+		Upper Bound: 	394.0877
+
+	exState: 
+		Item Level: 	9
+		Total Value: 	235
+		Total Weight: 	219
+		Upper Bound: 	342.01755
+
+	Updated Max value: 470
+Level: 8	Next Level: 9	MaxValue: 470
+totwgt: 116 wgt: 91
+	curState: 
+		Item Level: 	8
+		Total Value: 	170
+		Total Weight: 	116
+		Upper Bound: 	546.61536
+
+	inState: 
+		Item Level: 	9
+		Total Value: 	254
+		Total Weight: 	207
+		Upper Bound: 	365.2281
+
+	exState: 
+		Item Level: 	9
+		Total Value: 	170
+		Total Weight: 	116
+		Upper Bound: 	313.1579
+
+	Updated Max value: 470
+Level: 8	Next Level: 9	MaxValue: 470
+totwgt: 197 wgt: 91
+	curState: 
+		Item Level: 	8
+		Total Value: 	216
+		Total Weight: 	197
+		Upper Bound: 	517.8462
+
+	inState: 
+		Item Level: 	9
+		Total Value: 	300
+		Total Weight: 	288
+		Upper Bound: 	382.807
+
+	exState: 
+		Item Level: 	9
+		Total Value: 	216
+		Total Weight: 	197
+		Upper Bound: 	330.73685
+
+	Updated Max value: 470
+Level: 8	Next Level: 9	MaxValue: 470
+totwgt: 94 wgt: 91
+	curState: 
+		Item Level: 	8
+		Total Value: 	151
+		Total Weight: 	94
+		Upper Bound: 	547.9231
+
+	inState: 
+		Item Level: 	9
+		Total Value: 	235
+		Total Weight: 	185
+		Upper Bound: 	353.9474
+
+	exState: 
+		Item Level: 	9
+		Total Value: 	151
+		Total Weight: 	94
+		Upper Bound: 	301.8772
+
+	Updated Max value: 470
+Level: 8	Next Level: 9	MaxValue: 470
+totwgt: 290 wgt: 91
+	curState: 
+		Item Level: 	8
+		Total Value: 	281
+		Total Weight: 	290
+		Upper Bound: 	497.0
+
+	inState: 
+		Item Level: 	9
+		Total Value: 	365
+		Total Weight: 	381
+		Upper Bound: 	415.17545
+
+	exState: 
+		Item Level: 	9
+		Total Value: 	281
+		Total Weight: 	290
+		Upper Bound: 	363.10526
+
+	Updated Max value: 470
+Level: 8	Next Level: 9	MaxValue: 470
+totwgt: 191 wgt: 91
+	curState: 
+		Item Level: 	8
+		Total Value: 	208
+		Total Weight: 	191
+		Upper Bound: 	515.38464
+
+	inState: 
+		Item Level: 	9
+		Total Value: 	292
+		Total Weight: 	282
+		Upper Bound: 	376.9123
+
+	exState: 
+		Item Level: 	9
+		Total Value: 	208
+		Total Weight: 	191
+		Upper Bound: 	324.8421
+
+	Updated Max value: 470
+Level: 8	Next Level: 9	MaxValue: 470
+totwgt: 100 wgt: 91
+	curState: 
+		Item Level: 	8
+		Total Value: 	159
+		Total Weight: 	100
+		Upper Bound: 	550.38464
+
+	inState: 
+		Item Level: 	9
+		Total Value: 	243
+		Total Weight: 	191
+		Upper Bound: 	359.8421
+
+	exState: 
+		Item Level: 	9
+		Total Value: 	159
+		Total Weight: 	100
+		Upper Bound: 	307.7719
+
+	Updated Max value: 470
+Level: 8	Next Level: 9	MaxValue: 470
+totwgt: 213 wgt: 91
+	curState: 
+		Item Level: 	8
+		Total Value: 	227
+		Total Weight: 	213
+		Upper Bound: 	514.0769
+
+	inState: 
+		Item Level: 	9
+		Total Value: 	311
+		Total Weight: 	304
+		Upper Bound: 	388.193
+
+	exState: 
+		Item Level: 	9
+		Total Value: 	227
+		Total Weight: 	213
+		Upper Bound: 	336.1228
+
+	Updated Max value: 470
+Level: 8	Next Level: 9	MaxValue: 470
+totwgt: 268 wgt: 91
+	curState: 
+		Item Level: 	8
+		Total Value: 	262
+		Total Weight: 	268
+		Upper Bound: 	498.30768
+
+	inState: 
+		Item Level: 	9
+		Total Value: 	346
+		Total Weight: 	359
+		Upper Bound: 	403.89474
+
+	exState: 
+		Item Level: 	9
+		Total Value: 	262
+		Total Weight: 	268
+		Upper Bound: 	351.82455
+
+	Updated Max value: 470
+Level: 8	Next Level: 9	MaxValue: 470
+totwgt: 171 wgt: 91
+	curState: 
+		Item Level: 	8
+		Total Value: 	205
+		Total Weight: 	171
+		Upper Bound: 	530.8462
+
+	inState: 
+		Item Level: 	9
+		Total Value: 	289
+		Total Weight: 	262
+		Upper Bound: 	380.9298
+
+	exState: 
+		Item Level: 	9
+		Total Value: 	205
+		Total Weight: 	171
+		Upper Bound: 	328.85965
+
+	Updated Max value: 470
+Level: 8	Next Level: 9	MaxValue: 470
+totwgt: 165 wgt: 91
+	curState: 
+		Item Level: 	8
+		Total Value: 	197
+		Total Weight: 	165
+		Upper Bound: 	528.38464
+
+	inState: 
+		Item Level: 	9
+		Total Value: 	281
+		Total Weight: 	256
+		Upper Bound: 	375.0351
+
+	exState: 
+		Item Level: 	9
+		Total Value: 	197
+		Total Weight: 	165
+		Upper Bound: 	322.9649
+
+	Updated Max value: 470
+Level: 8	Next Level: 9	MaxValue: 470
+totwgt: 187 wgt: 91
+	curState: 
+		Item Level: 	8
+		Total Value: 	216
+		Total Weight: 	187
+		Upper Bound: 	527.0769
+
+	inState: 
+		Item Level: 	9
+		Total Value: 	300
+		Total Weight: 	278
+		Upper Bound: 	386.3158
+
+	exState: 
+		Item Level: 	9
+		Total Value: 	216
+		Total Weight: 	187
+		Upper Bound: 	334.2456
+
+	Updated Max value: 470
+Level: 8	Next Level: 9	MaxValue: 470
+totwgt: 193 wgt: 91
+	curState: 
+		Item Level: 	8
+		Total Value: 	224
+		Total Weight: 	193
+		Upper Bound: 	529.53845
+
+	inState: 
+		Item Level: 	9
+		Total Value: 	308
+		Total Weight: 	284
+		Upper Bound: 	392.2105
+
+	exState: 
+		Item Level: 	9
+		Total Value: 	224
+		Total Weight: 	193
+		Upper Bound: 	340.14035
+
+	Updated Max value: 470
+Level: 8	Next Level: 9	MaxValue: 470
+totwgt: 122 wgt: 91
+	curState: 
+		Item Level: 	8
+		Total Value: 	178
+		Total Weight: 	122
+		Upper Bound: 	549.0769
+
+	inState: 
+		Item Level: 	9
+		Total Value: 	262
+		Total Weight: 	213
+		Upper Bound: 	371.1228
+
+	exState: 
+		Item Level: 	9
+		Total Value: 	178
+		Total Weight: 	122
+		Upper Bound: 	319.0526
+
+	Updated Max value: 470
+Level: 8	Next Level: 9	MaxValue: 470
+totwgt: 284 wgt: 91
+	curState: 
+		Item Level: 	8
+		Total Value: 	273
+		Total Weight: 	284
+		Upper Bound: 	494.53845
+
+	inState: 
+		Item Level: 	9
+		Total Value: 	357
+		Total Weight: 	375
+		Upper Bound: 	409.2807
+
+	exState: 
+		Item Level: 	9
+		Total Value: 	273
+		Total Weight: 	284
+		Upper Bound: 	357.2105
+
+	Updated Max value: 470
+Level: 4	Next Level: 5	MaxValue: 470
+totwgt: 139 wgt: 71
+	curState: 
+		Item Level: 	4
+		Total Value: 	230
+		Total Weight: 	139
+		Upper Bound: 	479.43665
+
+	inState: 
+		Item Level: 	5
+		Total Value: 	276
+		Total Weight: 	210
+		Upper Bound: 	547.1818
+
+	exState: 
+		Item Level: 	5
+		Total Value: 	230
+		Total Weight: 	139
+		Upper Bound: 	562.5
+
+	Updated Max value: 470
+Level: 5	Next Level: 6	MaxValue: 470
+totwgt: 210 wgt: 22
+	curState: 
+		Item Level: 	5
+		Total Value: 	276
+		Total Weight: 	210
+		Upper Bound: 	547.1818
+
+	inState: 
+		Item Level: 	6
+		Total Value: 	295
+		Total Weight: 	232
+		Upper Bound: 	466.58762
+
+	exState: 
+		Item Level: 	6
+		Total Value: 	276
+		Total Weight: 	210
+		Upper Bound: 	460.51544
+
+	Updated Max value: 470
+Level: 5	Next Level: 6	MaxValue: 470
+totwgt: 139 wgt: 22
+	curState: 
+		Item Level: 	5
+		Total Value: 	230
+		Total Weight: 	139
+		Upper Bound: 	562.5
+
+	inState: 
+		Item Level: 	6
+		Total Value: 	249
+		Total Weight: 	161
+		Upper Bound: 	462.30927
+
+	exState: 
+		Item Level: 	6
+		Total Value: 	230
+		Total Weight: 	139
+		Upper Bound: 	456.23712
+
+	Updated Max value: 470
+Level: 4	Next Level: 5	MaxValue: 470
+totwgt: 225 wgt: 71
+	curState: 
+		Item Level: 	4
+		Total Value: 	221
+		Total Weight: 	225
+		Upper Bound: 	414.71832
+
+	inState: 
+		Item Level: 	5
+		Total Value: 	267
+		Total Weight: 	296
+		Upper Bound: 	463.9091
+
+	exState: 
+		Item Level: 	5
+		Total Value: 	221
+		Total Weight: 	225
+		Upper Bound: 	479.22726
+
+	Updated Max value: 470
+Level: 5	Next Level: 6	MaxValue: 470
+totwgt: 225 wgt: 22
+	curState: 
+		Item Level: 	5
+		Total Value: 	221
+		Total Weight: 	225
+		Upper Bound: 	479.22726
+
+	inState: 
+		Item Level: 	6
+		Total Value: 	240
+		Total Weight: 	247
+		Upper Bound: 	402.7732
+
+	exState: 
+		Item Level: 	6
+		Total Value: 	221
+		Total Weight: 	225
+		Upper Bound: 	396.70102
+
+	Updated Max value: 470
+Level: 4	Next Level: 5	MaxValue: 470
+totwgt: 199 wgt: 71
+	curState: 
+		Item Level: 	4
+		Total Value: 	239
+		Total Weight: 	199
+		Upper Bound: 	449.5634
+
+	inState: 
+		Item Level: 	5
+		Total Value: 	285
+		Total Weight: 	270
+		Upper Bound: 	504.36365
+
+	exState: 
+		Item Level: 	5
+		Total Value: 	239
+		Total Weight: 	199
+		Upper Bound: 	519.6818
+
+	Updated Max value: 470
+Level: 5	Next Level: 6	MaxValue: 470
+totwgt: 270 wgt: 22
+	curState: 
+		Item Level: 	5
+		Total Value: 	285
+		Total Weight: 	270
+		Upper Bound: 	504.36365
+
+	inState: 
+		Item Level: 	6
+		Total Value: 	304
+		Total Weight: 	292
+		Upper Bound: 	440.3299
+
+	exState: 
+		Item Level: 	6
+		Total Value: 	285
+		Total Weight: 	270
+		Upper Bound: 	434.25772
+
+	Updated Max value: 470
+Level: 5	Next Level: 6	MaxValue: 470
+totwgt: 199 wgt: 22
+	curState: 
+		Item Level: 	5
+		Total Value: 	239
+		Total Weight: 	199
+		Upper Bound: 	519.6818
+
+	inState: 
+		Item Level: 	6
+		Total Value: 	258
+		Total Weight: 	221
+		Upper Bound: 	436.05154
+
+	exState: 
+		Item Level: 	6
+		Total Value: 	239
+		Total Weight: 	199
+		Upper Bound: 	429.97937
+
+	Updated Max value: 470
+Level: 4	Next Level: 5	MaxValue: 470
+totwgt: 154 wgt: 71
+	curState: 
+		Item Level: 	4
+		Total Value: 	160
+		Total Weight: 	154
+		Upper Bound: 	399.71832
+
+	inState: 
+		Item Level: 	5
+		Total Value: 	206
+		Total Weight: 	225
+		Upper Bound: 	464.22726
+
+	exState: 
+		Item Level: 	5
+		Total Value: 	160
+		Total Weight: 	154
+		Upper Bound: 	479.54547
+
+	Updated Max value: 470
+Level: 5	Next Level: 6	MaxValue: 470
+totwgt: 154 wgt: 22
+	curState: 
+		Item Level: 	5
+		Total Value: 	160
+		Total Weight: 	154
+		Upper Bound: 	479.54547
+
+	inState: 
+		Item Level: 	6
+		Total Value: 	179
+		Total Weight: 	176
+		Upper Bound: 	383.49484
+
+	exState: 
+		Item Level: 	6
+		Total Value: 	160
+		Total Weight: 	154
+		Upper Bound: 	377.42267
+
+	Updated Max value: 470
+Level: 4	Next Level: 5	MaxValue: 470
+totwgt: 270 wgt: 71
+	curState: 
+		Item Level: 	4
+		Total Value: 	300
+		Total Weight: 	270
+		Upper Bound: 	464.5634
+
+	inState: 
+		Item Level: 	5
+		Total Value: 	346
+		Total Weight: 	341
+		Upper Bound: 	504.04547
+
+	exState: 
+		Item Level: 	5
+		Total Value: 	300
+		Total Weight: 	270
+		Upper Bound: 	519.36365
+
+	Updated Max value: 470
+Level: 5	Next Level: 6	MaxValue: 470
+totwgt: 341 wgt: 22
+	curState: 
+		Item Level: 	5
+		Total Value: 	346
+		Total Weight: 	341
+		Upper Bound: 	504.04547
+
+	inState: 
+		Item Level: 	6
+		Total Value: 	365
+		Total Weight: 	363
+		Upper Bound: 	459.60825
+
+	exState: 
+		Item Level: 	6
+		Total Value: 	346
+		Total Weight: 	341
+		Upper Bound: 	453.53607
+
+	Updated Max value: 470
+Level: 5	Next Level: 6	MaxValue: 470
+totwgt: 270 wgt: 22
+	curState: 
+		Item Level: 	5
+		Total Value: 	300
+		Total Weight: 	270
+		Upper Bound: 	519.36365
+
+	inState: 
+		Item Level: 	6
+		Total Value: 	319
+		Total Weight: 	292
+		Upper Bound: 	455.3299
+
+	exState: 
+		Item Level: 	6
+		Total Value: 	300
+		Total Weight: 	270
+		Upper Bound: 	449.25772
+
+	Updated Max value: 470
+Level: 4	Next Level: 5	MaxValue: 470
+totwgt: 210 wgt: 71
+	curState: 
+		Item Level: 	4
+		Total Value: 	291
+		Total Weight: 	210
+		Upper Bound: 	494.43665
+
+	inState: 
+		Item Level: 	5
+		Total Value: 	337
+		Total Weight: 	281
+		Upper Bound: 	546.86365
+
+	exState: 
+		Item Level: 	5
+		Total Value: 	291
+		Total Weight: 	210
+		Upper Bound: 	562.1818
+
+	Updated Max value: 470
+Level: 5	Next Level: 6	MaxValue: 470
+totwgt: 281 wgt: 22
+	curState: 
+		Item Level: 	5
+		Total Value: 	337
+		Total Weight: 	281
+		Upper Bound: 	546.86365
+
+	inState: 
+		Item Level: 	6
+		Total Value: 	356
+		Total Weight: 	303
+		Upper Bound: 	485.86597
+
+	exState: 
+		Item Level: 	6
+		Total Value: 	337
+		Total Weight: 	281
+		Upper Bound: 	479.79382
+
+	Updated Max value: 470
+Level: 5	Next Level: 6	MaxValue: 470
+totwgt: 210 wgt: 22
+	curState: 
+		Item Level: 	5
+		Total Value: 	291
+		Total Weight: 	210
+		Upper Bound: 	562.1818
+
+	inState: 
+		Item Level: 	6
+		Total Value: 	310
+		Total Weight: 	232
+		Upper Bound: 	481.58762
+
+	exState: 
+		Item Level: 	6
+		Total Value: 	291
+		Total Weight: 	210
+		Upper Bound: 	475.51544
+
+	Updated Max value: 470
+Level: 6	Next Level: 7	MaxValue: 470
+totwgt: 303 wgt: 97
+	curState: 
+		Item Level: 	6
+		Total Value: 	356
+		Total Weight: 	303
+		Upper Bound: 	485.86597
+
+	inState: 
+		Item Level: 	7
+		Total Value: 	413
+		Total Weight: 	400
+		Upper Bound: 	578.3334
+
+	exState: 
+		Item Level: 	7
+		Total Value: 	356
+		Total Weight: 	303
+		Upper Bound: 	650.6667
+
+	Updated Max value: 470
+Level: 7	Next Level: 8	MaxValue: 470
+totwgt: 400 wgt: 6
+	curState: 
+		Item Level: 	7
+		Total Value: 	413
+		Total Weight: 	400
+		Upper Bound: 	578.3334
+
+	inState: 
+		Item Level: 	8
+		Total Value: 	421
+		Total Weight: 	406
+		Upper Bound: 	529.9231
+
+	exState: 
+		Item Level: 	8
+		Total Value: 	413
+		Total Weight: 	400
+		Upper Bound: 	527.46155
+
+	Updated Max value: 470
+Level: 7	Next Level: 8	MaxValue: 470
+totwgt: 303 wgt: 6
+	curState: 
+		Item Level: 	7
+		Total Value: 	356
+		Total Weight: 	303
+		Upper Bound: 	650.6667
+
+	inState: 
+		Item Level: 	8
+		Total Value: 	364
+		Total Weight: 	309
+		Upper Bound: 	562.46155
+
+	exState: 
+		Item Level: 	8
+		Total Value: 	356
+		Total Weight: 	303
+		Upper Bound: 	560.0
+
+	Updated Max value: 470
+Level: 6	Next Level: 7	MaxValue: 470
+totwgt: 232 wgt: 97
+	curState: 
+		Item Level: 	6
+		Total Value: 	310
+		Total Weight: 	232
+		Upper Bound: 	481.58762
+
+	inState: 
+		Item Level: 	7
+		Total Value: 	367
+		Total Weight: 	329
+		Upper Bound: 	627.0
+
+	exState: 
+		Item Level: 	7
+		Total Value: 	310
+		Total Weight: 	232
+		Upper Bound: 	699.3334
+
+	Updated Max value: 470
+Level: 7	Next Level: 8	MaxValue: 470
+totwgt: 329 wgt: 6
+	curState: 
+		Item Level: 	7
+		Total Value: 	367
+		Total Weight: 	329
+		Upper Bound: 	627.0
+
+	inState: 
+		Item Level: 	8
+		Total Value: 	375
+		Total Weight: 	335
+		Upper Bound: 	549.46155
+
+	exState: 
+		Item Level: 	8
+		Total Value: 	367
+		Total Weight: 	329
+		Upper Bound: 	547.0
+
+	Updated Max value: 470
+Level: 7	Next Level: 8	MaxValue: 470
+totwgt: 232 wgt: 6
+	curState: 
+		Item Level: 	7
+		Total Value: 	310
+		Total Weight: 	232
+		Upper Bound: 	699.3334
+
+	inState: 
+		Item Level: 	8
+		Total Value: 	318
+		Total Weight: 	238
+		Upper Bound: 	582.0
+
+	exState: 
+		Item Level: 	8
+		Total Value: 	310
+		Total Weight: 	232
+		Upper Bound: 	579.53845
+
+	Updated Max value: 470
+Level: 6	Next Level: 7	MaxValue: 470
+totwgt: 210 wgt: 97
+	curState: 
+		Item Level: 	6
+		Total Value: 	291
+		Total Weight: 	210
+		Upper Bound: 	475.51544
+
+	inState: 
+		Item Level: 	7
+		Total Value: 	348
+		Total Weight: 	307
+		Upper Bound: 	637.3334
+
+	exState: 
+		Item Level: 	7
+		Total Value: 	291
+		Total Weight: 	210
+		Upper Bound: 	709.6667
+
+	Updated Max value: 470
+Level: 7	Next Level: 8	MaxValue: 470
+totwgt: 307 wgt: 6
+	curState: 
+		Item Level: 	7
+		Total Value: 	348
+		Total Weight: 	307
+		Upper Bound: 	637.3334
+
+	inState: 
+		Item Level: 	8
+		Total Value: 	356
+		Total Weight: 	313
+		Upper Bound: 	550.7692
+
+	exState: 
+		Item Level: 	8
+		Total Value: 	348
+		Total Weight: 	307
+		Upper Bound: 	548.3077
+
+	Updated Max value: 470
+Level: 7	Next Level: 8	MaxValue: 470
+totwgt: 210 wgt: 6
+	curState: 
+		Item Level: 	7
+		Total Value: 	291
+		Total Weight: 	210
+		Upper Bound: 	709.6667
+
+	inState: 
+		Item Level: 	8
+		Total Value: 	299
+		Total Weight: 	216
+		Upper Bound: 	583.30774
+
+	exState: 
+		Item Level: 	8
+		Total Value: 	291
+		Total Weight: 	210
+		Upper Bound: 	580.8462
+
+	Updated Max value: 470
+Level: 6	Next Level: 7	MaxValue: 470
+totwgt: 281 wgt: 97
+	curState: 
+		Item Level: 	6
+		Total Value: 	337
+		Total Weight: 	281
+		Upper Bound: 	479.79382
+
+	inState: 
+		Item Level: 	7
+		Total Value: 	394
+		Total Weight: 	378
+		Upper Bound: 	588.6667
+
+	exState: 
+		Item Level: 	7
+		Total Value: 	337
+		Total Weight: 	281
+		Upper Bound: 	661.0
+
+	Updated Max value: 470
+Level: 7	Next Level: 8	MaxValue: 470
+totwgt: 378 wgt: 6
+	curState: 
+		Item Level: 	7
+		Total Value: 	394
+		Total Weight: 	378
+		Upper Bound: 	588.6667
+
+	inState: 
+		Item Level: 	8
+		Total Value: 	402
+		Total Weight: 	384
+		Upper Bound: 	531.2308
+
+	exState: 
+		Item Level: 	8
+		Total Value: 	394
+		Total Weight: 	378
+		Upper Bound: 	528.7692
+
+	Updated Max value: 470
+Level: 7	Next Level: 8	MaxValue: 470
+totwgt: 281 wgt: 6
+	curState: 
+		Item Level: 	7
+		Total Value: 	337
+		Total Weight: 	281
+		Upper Bound: 	661.0
+
+	inState: 
+		Item Level: 	8
+		Total Value: 	345
+		Total Weight: 	287
+		Upper Bound: 	563.7692
+
+	exState: 
+		Item Level: 	8
+		Total Value: 	337
+		Total Weight: 	281
+		Upper Bound: 	561.3077
+
+	Updated Max value: 470
+Level: 8	Next Level: 9	MaxValue: 470
+totwgt: 378 wgt: 91
+	curState: 
+		Item Level: 	8
+		Total Value: 	394
+		Total Weight: 	378
+		Upper Bound: 	528.7692
+
+	inState: 
+		Item Level: 	9
+		Total Value: 	478
+		Total Weight: 	469
+		Upper Bound: 	497.29825
+
+	exState: 
+		Item Level: 	9
+		Total Value: 	394
+		Total Weight: 	378
+		Upper Bound: 	445.22806
+
+	Updated Max value: 478
+Level: 9	Next Level: 10	MaxValue: 478
+totwgt: 469 wgt: 57
+	curState: 
+		Item Level: 	9
+		Total Value: 	478
+		Total Weight: 	469
+		Upper Bound: 	497.29825
+
+	exState: 
+		Item Level: 	10
+		Total Value: 	478
+		Total Weight: 	469
+		Upper Bound: 	544.0
+
+	Updated Max value: 478
+Level: 10	Next Level: 11	MaxValue: 478
+totwgt: 469 wgt: 60
+	curState: 
+		Item Level: 	10
+		Total Value: 	478
+		Total Weight: 	469
+		Upper Bound: 	544.0
+
+	exState: 
+		Item Level: 	11
+		Total Value: 	478
+		Total Weight: 	469
+		Upper Bound: 	513.91833
+
+	Updated Max value: 478
+Level: 11	Next Level: 12	MaxValue: 478
+totwgt: 469 wgt: 49
+	curState: 
+		Item Level: 	11
+		Total Value: 	478
+		Total Weight: 	469
+		Upper Bound: 	513.91833
+
+	inState: 
+		Item Level: 	12
+		Total Value: 	510
+		Total Weight: 	518
+		Upper Bound: 	512.0899
+
+	exState: 
+		Item Level: 	12
+		Total Value: 	478
+		Total Weight: 	469
+		Upper Bound: 	497.1573
+
+	Updated Max value: 510
+Level: 12	Next Level: 13	MaxValue: 510
+totwgt: 518 wgt: 89
+	curState: 
+		Item Level: 	12
+		Total Value: 	510
+		Total Weight: 	518
+		Upper Bound: 	512.0899
+
+	exState: 
+		Item Level: 	13
+		Total Value: 	510
+		Total Weight: 	518
+		Upper Bound: 	594.0
+
+	Updated Max value: 510
+Level: 13	Next Level: 14	MaxValue: 510
+totwgt: 518 wgt: 2
+	curState: 
+		Item Level: 	13
+		Total Value: 	510
+		Total Weight: 	518
+		Upper Bound: 	594.0
+
+	inState: 
+		Item Level: 	14
+		Total Value: 	538
+		Total Weight: 	520
+		Upper Bound: 	548.8
+
+	exState: 
+		Item Level: 	14
+		Total Value: 	510
+		Total Weight: 	518
+		Upper Bound: 	526.2
+
+	Updated Max value: 538
+Level: 8	Next Level: 9	MaxValue: 538
+totwgt: 281 wgt: 91
+	curState: 
+		Item Level: 	8
+		Total Value: 	337
+		Total Weight: 	281
+		Upper Bound: 	561.3077
+
+	inState: 
+		Item Level: 	9
+		Total Value: 	421
+		Total Weight: 	372
+		Upper Bound: 	474.33334
+
+	exState: 
+		Item Level: 	9
+		Total Value: 	337
+		Total Weight: 	281
+		Upper Bound: 	422.26315
+
+	Updated Max value: 538
+Level: 8	Next Level: 9	MaxValue: 538
+totwgt: 335 wgt: 91
+	curState: 
+		Item Level: 	8
+		Total Value: 	375
+		Total Weight: 	335
+		Upper Bound: 	549.46155
+
+	inState: 
+		Item Level: 	9
+		Total Value: 	459
+		Total Weight: 	426
+		Upper Bound: 	493.38596
+
+	exState: 
+		Item Level: 	9
+		Total Value: 	375
+		Total Weight: 	335
+		Upper Bound: 	441.3158
+
+	Updated Max value: 538
+Level: 8	Next Level: 9	MaxValue: 538
+totwgt: 287 wgt: 91
+	curState: 
+		Item Level: 	8
+		Total Value: 	345
+		Total Weight: 	287
+		Upper Bound: 	563.7692
+
+	inState: 
+		Item Level: 	9
+		Total Value: 	429
+		Total Weight: 	378
+		Upper Bound: 	480.22806
+
+	exState: 
+		Item Level: 	9
+		Total Value: 	345
+		Total Weight: 	287
+		Upper Bound: 	428.1579
+
+	Updated Max value: 538
+Level: 8	Next Level: 9	MaxValue: 538
+totwgt: 384 wgt: 91
+	curState: 
+		Item Level: 	8
+		Total Value: 	402
+		Total Weight: 	384
+		Upper Bound: 	531.2308
+
+	inState: 
+		Item Level: 	9
+		Total Value: 	486
+		Total Weight: 	475
+		Upper Bound: 	503.193
+
+	exState: 
+		Item Level: 	9
+		Total Value: 	402
+		Total Weight: 	384
+		Upper Bound: 	451.1228
+
+	Updated Max value: 538
+Level: 8	Next Level: 9	MaxValue: 538
+totwgt: 216 wgt: 91
+	curState: 
+		Item Level: 	8
+		Total Value: 	299
+		Total Weight: 	216
+		Upper Bound: 	583.30774
+
+	inState: 
+		Item Level: 	9
+		Total Value: 	383
+		Total Weight: 	307
+		Upper Bound: 	459.14035
+
+	exState: 
+		Item Level: 	9
+		Total Value: 	299
+		Total Weight: 	216
+		Upper Bound: 	407.0702
+
+	Updated Max value: 538
+Level: 8	Next Level: 9	MaxValue: 538
+totwgt: 232 wgt: 91
+	curState: 
+		Item Level: 	8
+		Total Value: 	310
+		Total Weight: 	232
+		Upper Bound: 	579.53845
+
+	inState: 
+		Item Level: 	9
+		Total Value: 	394
+		Total Weight: 	323
+		Upper Bound: 	464.5263
+
+	exState: 
+		Item Level: 	9
+		Total Value: 	310
+		Total Weight: 	232
+		Upper Bound: 	412.45615
+
+	Updated Max value: 538
+Level: 8	Next Level: 9	MaxValue: 538
+totwgt: 313 wgt: 91
+	curState: 
+		Item Level: 	8
+		Total Value: 	356
+		Total Weight: 	313
+		Upper Bound: 	550.7692
+
+	inState: 
+		Item Level: 	9
+		Total Value: 	440
+		Total Weight: 	404
+		Upper Bound: 	482.10526
+
+	exState: 
+		Item Level: 	9
+		Total Value: 	356
+		Total Weight: 	313
+		Upper Bound: 	430.0351
+
+	Updated Max value: 538
+Level: 8	Next Level: 9	MaxValue: 538
+totwgt: 210 wgt: 91
+	curState: 
+		Item Level: 	8
+		Total Value: 	291
+		Total Weight: 	210
+		Upper Bound: 	580.8462
+
+	inState: 
+		Item Level: 	9
+		Total Value: 	375
+		Total Weight: 	301
+		Upper Bound: 	453.2456
+
+	exState: 
+		Item Level: 	9
+		Total Value: 	291
+		Total Weight: 	210
+		Upper Bound: 	401.17545
+
+	Updated Max value: 538
+Level: 8	Next Level: 9	MaxValue: 538
+totwgt: 307 wgt: 91
+	curState: 
+		Item Level: 	8
+		Total Value: 	348
+		Total Weight: 	307
+		Upper Bound: 	548.3077
+
+	inState: 
+		Item Level: 	9
+		Total Value: 	432
+		Total Weight: 	398
+		Upper Bound: 	476.2105
+
+	exState: 
+		Item Level: 	9
+		Total Value: 	348
+		Total Weight: 	307
+		Upper Bound: 	424.14035
+
+	Updated Max value: 538
+Level: 8	Next Level: 9	MaxValue: 538
+totwgt: 329 wgt: 91
+	curState: 
+		Item Level: 	8
+		Total Value: 	367
+		Total Weight: 	329
+		Upper Bound: 	547.0
+
+	inState: 
+		Item Level: 	9
+		Total Value: 	451
+		Total Weight: 	420
+		Upper Bound: 	487.49124
+
+	exState: 
+		Item Level: 	9
+		Total Value: 	367
+		Total Weight: 	329
+		Upper Bound: 	435.42105
+
+	Updated Max value: 538
+Level: 8	Next Level: 9	MaxValue: 538
+totwgt: 400 wgt: 91
+	curState: 
+		Item Level: 	8
+		Total Value: 	413
+		Total Weight: 	400
+		Upper Bound: 	527.46155
+
+	inState: 
+		Item Level: 	9
+		Total Value: 	497
+		Total Weight: 	491
+		Upper Bound: 	508.57895
+
+	exState: 
+		Item Level: 	9
+		Total Value: 	413
+		Total Weight: 	400
+		Upper Bound: 	456.5088
+
+	Updated Max value: 538
+Level: 8	Next Level: 9	MaxValue: 538
+totwgt: 238 wgt: 91
+	curState: 
+		Item Level: 	8
+		Total Value: 	318
+		Total Weight: 	238
+		Upper Bound: 	582.0
+
+	inState: 
+		Item Level: 	9
+		Total Value: 	402
+		Total Weight: 	329
+		Upper Bound: 	470.42105
+
+	exState: 
+		Item Level: 	9
+		Total Value: 	318
+		Total Weight: 	238
+		Upper Bound: 	418.3509
+
+	Updated Max value: 538
+Level: 8	Next Level: 9	MaxValue: 538
+totwgt: 303 wgt: 91
+	curState: 
+		Item Level: 	8
+		Total Value: 	356
+		Total Weight: 	303
+		Upper Bound: 	560.0
+
+	inState: 
+		Item Level: 	9
+		Total Value: 	440
+		Total Weight: 	394
+		Upper Bound: 	485.61404
+
+	exState: 
+		Item Level: 	9
+		Total Value: 	356
+		Total Weight: 	303
+		Upper Bound: 	433.54385
+
+	Updated Max value: 538
+Level: 8	Next Level: 9	MaxValue: 538
+totwgt: 406 wgt: 91
+	curState: 
+		Item Level: 	8
+		Total Value: 	421
+		Total Weight: 	406
+		Upper Bound: 	529.9231
+
+	inState: 
+		Item Level: 	9
+		Total Value: 	505
+		Total Weight: 	497
+		Upper Bound: 	514.4737
+
+	exState: 
+		Item Level: 	9
+		Total Value: 	421
+		Total Weight: 	406
+		Upper Bound: 	462.4035
+
+	Updated Max value: 538
+Level: 8	Next Level: 9	MaxValue: 538
+totwgt: 309 wgt: 91
+	curState: 
+		Item Level: 	8
+		Total Value: 	364
+		Total Weight: 	309
+		Upper Bound: 	562.46155
+
+	inState: 
+		Item Level: 	9
+		Total Value: 	448
+		Total Weight: 	400
+		Upper Bound: 	491.5088
+
+	exState: 
+		Item Level: 	9
+		Total Value: 	364
+		Total Weight: 	309
+		Upper Bound: 	439.4386
+
+	Updated Max value: 538
+Level: 4	Next Level: 5	MaxValue: 538
+totwgt: 165 wgt: 71
+	curState: 
+		Item Level: 	4
+		Total Value: 	212
+		Total Weight: 	165
+		Upper Bound: 	444.59155
+
+	inState: 
+		Item Level: 	5
+		Total Value: 	258
+		Total Weight: 	236
+		Upper Bound: 	506.7273
+
+	exState: 
+		Item Level: 	5
+		Total Value: 	212
+		Total Weight: 	165
+		Upper Bound: 	522.0455
+
+	Updated Max value: 538
+Level: 0	Next Level: 1	MaxValue: 538
+totwgt: 0 wgt: 65
+	curState: 
+		Item Level: 	0
+		Total Value: 	0
+		Total Weight: 	0
+		Upper Bound: 	483.69232
+
+	inState: 
+		Item Level: 	1
+		Total Value: 	60
+		Total Weight: 	65
+		Upper Bound: 	454.3521
+
+	exState: 
+		Item Level: 	1
+		Total Value: 	0
+		Total Weight: 	0
+		Upper Bound: 	450.19717
+
+	Updated Max value: 538
+Level: 14	Next Level: 15	MaxValue: 538
+totwgt: 462 wgt: 30
+	curState: 
+		Item Level: 	14
+		Total Value: 	442
+		Total Weight: 	462
+		Upper Bound: 	609.4
+
+	inState: 
+		Item Level: 	15
+		Total Value: 	523
+		Total Weight: 	492
+		Upper Bound: 	542.55554
+
+	exState: 
+		Item Level: 	15
+		Total Value: 	442
+		Total Weight: 	462
+		Upper Bound: 	479.8889
+
+	Updated Max value: 538
+Level: 15	Next Level: 16	MaxValue: 538
+totwgt: 492 wgt: 90
+	curState: 
+		Item Level: 	15
+		Total Value: 	523
+		Total Weight: 	492
+		Upper Bound: 	542.55554
+
+	exState: 
+		Item Level: 	16
+		Total Value: 	523
+		Total Weight: 	492
+		Upper Bound: 	578.04
+
+	Updated Max value: 538
+Level: 16	Next Level: 17	MaxValue: 538
+totwgt: 492 wgt: 25
+	curState: 
+		Item Level: 	16
+		Total Value: 	523
+		Total Weight: 	492
+		Upper Bound: 	578.04
+
+	inState: 
+		Item Level: 	17
+		Total Value: 	566
+		Total Weight: 	517
+		Upper Bound: 	574.53656
+
+	exState: 
+		Item Level: 	17
+		Total Value: 	523
+		Total Weight: 	492
+		Upper Bound: 	562.0244
+
+	Updated Max value: 566
+Level: 17	Next Level: 18	MaxValue: 566
+totwgt: 517 wgt: 82
+	curState: 
+		Item Level: 	17
+		Total Value: 	566
+		Total Weight: 	517
+		Upper Bound: 	574.53656
+
+	exState: 
+		Item Level: 	18
+		Total Value: 	566
+		Total Weight: 	517
+		Upper Bound: 	575.9474
+
+	Updated Max value: 566
+Level: 18	Next Level: 19	MaxValue: 566
+totwgt: 517 wgt: 19
+	curState: 
+		Item Level: 	18
+		Total Value: 	566
+		Total Weight: 	517
+		Upper Bound: 	575.9474
+
+	exState: 
+		Item Level: 	19
+		Total Value: 	566
+		Total Weight: 	517
+		Upper Bound: 	566.0
+
+	Updated Max value: 566
+Level: 14	Next Level: 15	MaxValue: 566
+totwgt: 502 wgt: 30
+	curState: 
+		Item Level: 	14
+		Total Value: 	441
+		Total Weight: 	502
+		Upper Bound: 	500.4
+
+	exState: 
+		Item Level: 	15
+		Total Value: 	441
+		Total Weight: 	502
+		Upper Bound: 	454.44446
+
+	Updated Max value: 566
+Level: 14	Next Level: 15	MaxValue: 566
+totwgt: 413 wgt: 30
+	curState: 
+		Item Level: 	14
+		Total Value: 	410
+		Total Weight: 	413
+		Upper Bound: 	709.7
+
+	inState: 
+		Item Level: 	15
+		Total Value: 	491
+		Total Weight: 	443
+		Upper Bound: 	540.5
+
+	exState: 
+		Item Level: 	15
+		Total Value: 	410
+		Total Weight: 	413
+		Upper Bound: 	477.83334
+
+	Updated Max value: 566
+Level: 14	Next Level: 15	MaxValue: 566
+totwgt: 464 wgt: 30
+	curState: 
+		Item Level: 	14
+		Total Value: 	470
+		Total Weight: 	464
+		Upper Bound: 	632.0
+
+	inState: 
+		Item Level: 	15
+		Total Value: 	551
+		Total Weight: 	494
+		Upper Bound: 	569.3333
+
+	exState: 
+		Item Level: 	15
+		Total Value: 	470
+		Total Weight: 	464
+		Upper Bound: 	506.66666
+
+	Updated Max value: 566
+Level: 15	Next Level: 16	MaxValue: 566
+totwgt: 494 wgt: 90
+	curState: 
+		Item Level: 	15
+		Total Value: 	551
+		Total Weight: 	494
+		Upper Bound: 	569.3333
+
+	exState: 
+		Item Level: 	16
+		Total Value: 	551
+		Total Weight: 	494
+		Upper Bound: 	602.6
+
+	Updated Max value: 566
+Level: 16	Next Level: 17	MaxValue: 566
+totwgt: 494 wgt: 25
+	curState: 
+		Item Level: 	16
+		Total Value: 	551
+		Total Weight: 	494
+		Upper Bound: 	602.6
+
+	inState: 
+		Item Level: 	17
+		Total Value: 	594
+		Total Weight: 	519
+		Upper Bound: 	600.09753
+
+	exState: 
+		Item Level: 	17
+		Total Value: 	551
+		Total Weight: 	494
+		Upper Bound: 	587.5854
+
+	Updated Max value: 594
+Level: 17	Next Level: 18	MaxValue: 594
+totwgt: 519 wgt: 82
+	curState: 
+		Item Level: 	17
+		Total Value: 	594
+		Total Weight: 	519
+		Upper Bound: 	600.09753
+
+	exState: 
+		Item Level: 	18
+		Total Value: 	594
+		Total Weight: 	519
+		Upper Bound: 	601.1053
+
+	Updated Max value: 594
+Level: 18	Next Level: 19	MaxValue: 594
+totwgt: 519 wgt: 19
+	curState: 
+		Item Level: 	18
+		Total Value: 	594
+		Total Weight: 	519
+		Upper Bound: 	601.1053
+
+	exState: 
+		Item Level: 	19
+		Total Value: 	594
+		Total Weight: 	519
+		Upper Bound: 	594.0
+
+	Updated Max value: 594
+Level: 14	Next Level: 15	MaxValue: 594
+totwgt: 504 wgt: 30
+	curState: 
+		Item Level: 	14
+		Total Value: 	469
+		Total Weight: 	504
+		Upper Bound: 	523.0
+
+	exState: 
+		Item Level: 	15
+		Total Value: 	469
+		Total Weight: 	504
+		Upper Bound: 	481.22223
+
+	Updated Max value: 594
+Level: 14	Next Level: 15	MaxValue: 594
+totwgt: 520 wgt: 30
+	curState: 
+		Item Level: 	14
+		Total Value: 	538
+		Total Weight: 	520
+		Upper Bound: 	548.8
+
+	exState: 
+		Item Level: 	15
+		Total Value: 	538
+		Total Weight: 	520
+		Upper Bound: 	540.44446
+
+	Updated Max value: 594
+Level: 14	Next Level: 15	MaxValue: 594
+totwgt: 415 wgt: 30
+	curState: 
+		Item Level: 	14
+		Total Value: 	438
+		Total Weight: 	415
+		Upper Bound: 	732.30005
+
+	inState: 
+		Item Level: 	15
+		Total Value: 	519
+		Total Weight: 	445
+		Upper Bound: 	567.2778
+
+	exState: 
+		Item Level: 	15
+		Total Value: 	438
+		Total Weight: 	415
+		Upper Bound: 	504.6111
+
+	Updated Max value: 594

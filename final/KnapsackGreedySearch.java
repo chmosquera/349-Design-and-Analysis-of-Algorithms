@@ -31,7 +31,7 @@ class KnapsackGreedySearch
 
         // sort items in order of value to weight ratio
         // items_sorted contains the items in order of decr. value per weight
-        ArrayList<Integer> items_sorted = items;
+        ArrayList<Integer> items_sorted = new ArrayList<Integer>(items);
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n-i-1; j++) {
                 if (valueToWeight.get(items_sorted.get(j)-1) < valueToWeight.get(items_sorted.get(j+1)-1)) {
