@@ -3,6 +3,7 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 import java.util.PriorityQueue;
+import java.util.*;
 import java.io.*;
 import java.util.Arrays;
 import java.util.ArrayList;
@@ -44,7 +45,7 @@ class KnapsackBnB
     public class Item implements Comparable<Item>{
         
         int item, val, wgt;
-        float v2w
+        float v2w;
 
         Item(int item, int val, int wgt, float v2w) {
             this.item = item;
@@ -53,10 +54,13 @@ class KnapsackBnB
             this.v2w = v2w;
         }
 
-        public int compareTo(Node o) {
+        public int compareTo(Item o) {
             if (this.v2w > o.v2w) return -1;
-            else if (this.v2w < 0.v2w) return 1;
+            else if (this.v2w < o.v2w) return 1;
             return 0;
+        }
+        void Print() {
+            System.out.println("Item: " + item + "\tval: " + val + "\twgt: " + wgt + "\tv2w: " + v2w);
         }
     }
 
@@ -65,27 +69,7 @@ class KnapsackBnB
     public void Solve(ArrayList<Integer> items, ArrayList<Integer> values, ArrayList<Integer> weights, int capacity) {
         int n = items.size(); 
 
-	// Priority Queue
-
-        // get value to weight ratio of each object
-        ArrayList<Float> valToWgt = new ArrayList<Float>(n);
-        for (int i = 0; i < n; i++) {
-            float v2w = (float)values.get(i) / (float)weights.get(i);
-            valToWgt.add(v2w);
-        }
-
-        // sort items in order of value to weight ratio
-        ArrayList<Integer> items_sorted = new ArrayList<Integer>(items);
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < n-i-1; j++) {
-                if (valToWgt.get(items_sorted.get(j)-1) < valToWgt.get(items_sorted.get(j+1)-1)) {
-                    int temp = items_sorted.get(j);
-                    items_sorted.set(j, items_sorted.get(j+1));
-                    items_sorted.set(j+1, temp);
-                }
-            }   
-        }
-        // TESTING 
+        /* TESTING 
         System.out.println("Before sort ...");
         System.out.println("items:\t" + Arrays.toString(items.toArray()));
         System.out.println("v to w:\t: " + Arrays.toString(valToWgt.toArray()));
@@ -98,22 +82,40 @@ class KnapsackBnB
             System.out.print(valToWgt.get(items.get(items_sorted.get(i)-1)-1) + ", ");
         }
         System.out.println("}");
-        
+        */
 
-        // testing priority 1
+        /* testing priority 1
         PriorityQueue<Node> q = new PriorityQueue<Node>();
         Node nk = new Node(); nk.valToWgt = 0.9f;
         q.add(nk);
         Node nl = new Node(); nl.valToWgt = 4.5f;
         q.add(nl);
         Node nd = new Node(); nd.valToWgt = 3.5f;
-        q.add(nd);
+        q.add(nd); 
 
         for (int i = 0; i < 3; i++) {
             Node qw = q.poll();
             System.out.println(qw.valToWgt);
+        } */
+
+        
+        // setup all items into node
+        System.out.println("List of items:");
+        ArrayList<Item> itemsList = new ArrayList<Item>();
+        for (int i = 0; i < n; i++) {
+            float v2w = (float)values.get(i)/(float)weights.get(i);
+            Item it = new Item(items.get(i), values.get(i), weights.get(i), v2w);
+            itemsList.add(it);
+            it.Print();
         }
 
+        Collections.sort(itemsList);
+        System.out.println("List of items (sorted): ");
+        for (int i = 0; i < n; i++) {
+            (itemsList.get(i)).Print();
+        }
+
+        /*
         // setup
         Node root = new Node();                 // setup starting point of tree
         root.itemlvl = -1;
@@ -124,6 +126,7 @@ class KnapsackBnB
         Q.add(root);
         int maxValue = 0;           // max value in knapsack found so far
 
+        
         while ((curState = Q.poll()) != null) {    // are there more states in the tree to examine?
             //System.out.println("QQQQQ:" +  Arrays.toString(Q.toArray()));
             
@@ -177,5 +180,6 @@ class KnapsackBnB
                 Q.add(exState);
             }
         }
+*/
     }
 }
