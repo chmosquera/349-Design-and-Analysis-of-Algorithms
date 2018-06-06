@@ -41,6 +41,25 @@ class KnapsackBnB
         }
     }
 
+    public class Item implements Comparable<Item>{
+        
+        int item, val, wgt;
+        float v2w
+
+        Item(int item, int val, int wgt, float v2w) {
+            this.item = item;
+            this.val = val;
+            this.wgt = wgt;
+            this.v2w = v2w;
+        }
+
+        public int compareTo(Node o) {
+            if (this.v2w > o.v2w) return -1;
+            else if (this.v2w < 0.v2w) return 1;
+            return 0;
+        }
+    }
+
     public KnapsackBnB() {}
 
     public void Solve(ArrayList<Integer> items, ArrayList<Integer> values, ArrayList<Integer> weights, int capacity) {
@@ -114,7 +133,7 @@ class KnapsackBnB
                 continue;
             }
 
-            level++;
+            level = curState.itemlvl;
             System.out.println("Level: " + curState.itemlvl + "\tNext Level: " + (curState.itemlvl+1) + "\tMaxValue: " + maxValue);       // Test
             // check out the next level of tree && examine options
             //level++;
