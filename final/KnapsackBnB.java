@@ -34,8 +34,8 @@ class KnapsackBnB
         }
 
         public int compareTo(Node o) {
-            if (this.valToWgt > o.valToWgt) return 1;
-            else if (this.valToWgt < o.valToWgt) return -1;
+            if (this.valToWgt > o.valToWgt) return -1;
+            else if (this.valToWgt < o.valToWgt) return 1;
             return 0;
         }
     
@@ -103,7 +103,7 @@ class KnapsackBnB
         }
         System.out.println("}");
         */
-	
+
         // setup
         Node root = new Node();                 // setup starting point of tree
         root.itemlvl = -1;
@@ -134,39 +134,41 @@ class KnapsackBnB
             System.out.println("totwgt: " + curState.totwgt + " wgt: " + weights.get(level));
             System.out.println("\tcurState: ");
             curState.Print();
-            if ((curState.totwgt + weights.get(level)) < capacity) {      // not feasible -- prune
                 
             inState.totval = curState.totval + values.get(level);       // include state
             inState.totwgt = curState.totwgt + weights.get(level);
             inState.bound = computeBound(inState, valToWgt, (capacity - inState.totwgt));
             inState.valToWgt = valToWgt.get(level);
             
-            System.out.println("\tinState: " + "\ti: " + items.get(level) + "\tv: " + values.get(level) + "\tw: " + weights.get(level));
+            System.out.println("\tinState: " + "\ti: " + items.get(level) + "\tv: " + values.get(level) + "\tw: " + weights.get(level) + "\tv2w: " + valToWgt.get(level));
             inState.Print();
-            }
+
 
             exState.totval = curState.totval;                       // exclude state
             exState.totwgt = curState.totwgt;
             exState.bound = computeBound(exState, valToWgt, (capacity - exState.totwgt));
             exState.valToWgt = valToWgt.get(level);
             
-            System.out.println("\texState: " + "\ti: " + items.get(level) + "\tv: " + values.get(level) + "\tw: " + weights.get(level));
+            System.out.println("\texState: " + "\ti: " + items.get(level) + "\tv: " + values.get(level) + "\tw: " + weights.get(level) + "\tv2w: " + valToWgt.get(level));
             exState.Print();
             
-
-            // Update Maxvalue if this node is valid and increases maxValue
+            //Update Maxvalue if this node is valid and increases maxValue
             if (inState.totval > maxValue && inState.totwgt <= capacity) {
-                maxValue = inState.totval;
+                 maxValue = inState.totval;
             }
-
             System.out.println("\tUpdated Max value: " + maxValue);
+
             // Decide whether it is worth traversing down these states further
-            if (inState.totwgt <= capacity && inState.bound > maxValue) {
+            if (inState.bound > maxValue) {
                 Q.add(inState);
             }
             if (exState.bound > maxValue) {
                 Q.add(exState);
             }
+
+
+
+
         }
     }
 }
