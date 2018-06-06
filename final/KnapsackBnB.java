@@ -18,16 +18,9 @@ class KnapsackBnB
         int itemlvl, totval, totwgt;
         float bound, valToWgt;
 
-        Node(Node n) {
-            this.itemlvl = n.itemlvl;
-            this.totval = n.totval;
-            this.totwgt = n.totwgt;
-            this.bound = n.bound;
-        }
-
         Node() {
             this.itemlvl = 0;					// ID in tree
-            this.totval = 0;			// total value
+            this.totval = 0;			                // total value
             this.totwgt = 0;
             this.bound = 0;
             this.valToWgt = 0;
@@ -49,22 +42,6 @@ class KnapsackBnB
     }
 
     public KnapsackBnB() {}
-
-    public float computeBound(Node state, ArrayList<Float> valToWgt, int rCap) {
-        int n = valToWgt.size();
-        int nextlvl = state.itemlvl + 1;
-
-//        if (nextlvl == 0) {     // at the root (-1)
-//            return 
-//        }
-
-        // the upper bound will only increase if there are more items to pick up
-        if (nextlvl >= n) {
-            return state.totval;
-        } 
-
-         return state.totval + (rCap * valToWgt.get(nextlvl));
-    }
 
     public void Solve(ArrayList<Integer> items, ArrayList<Integer> values, ArrayList<Integer> weights, int capacity) {
         int n = items.size(); 
@@ -89,7 +66,7 @@ class KnapsackBnB
                 }
             }   
         }
-        /* TESTING 
+        // TESTING 
         System.out.println("Before sort ...");
         System.out.println("items:\t" + Arrays.toString(items.toArray()));
         System.out.println("v to w:\t: " + Arrays.toString(valToWgt.toArray()));
@@ -102,12 +79,26 @@ class KnapsackBnB
             System.out.print(valToWgt.get(items.get(items_sorted.get(i)-1)-1) + ", ");
         }
         System.out.println("}");
-        */
+        
+
+        // testing priority 1
+        PriorityQueue<Node> q = new PriorityQueue<Node>();
+        Node nk = new Node(); nk.valToWgt = 0.9f;
+        q.add(nk);
+        Node nl = new Node(); nl.valToWgt = 4.5f;
+        q.add(nl);
+        Node nd = new Node(); nd.valToWgt = 3.5f;
+        q.add(nd);
+
+        for (int i = 0; i < 3; i++) {
+            Node qw = q.poll();
+            System.out.println(qw.valToWgt);
+        }
 
         // setup
         Node root = new Node();                 // setup starting point of tree
         root.itemlvl = -1;
-        root.bound =  computeBound(root, valToWgt, capacity);
+        root.bound = capacity * valToWgt.get(items.get(items_sorted.get(0)-1)-1);   // offset to get index of item
         Node curState = new Node();
 
         PriorityQueue<Node> Q = new PriorityQueue<Node>();
@@ -131,13 +122,14 @@ class KnapsackBnB
             Node exState = new Node();
             inState.itemlvl = exState.itemlvl = level;
 
-            System.out.println("totwgt: " + curState.totwgt + " wgt: " + weights.get(level));
+           // System.out.println("totwgt: " + curState.totwgt + " wgt: " + weights.get(level));
             System.out.println("\tcurState: ");
             curState.Print();
                 
             inState.totval = curState.totval + values.get(level);       // include state
             inState.totwgt = curState.totwgt + weights.get(level);
-            inState.bound = computeBound(inState, valToWgt, (capacity - inState.totwgt));
+            inState.bound = inState.totval + ((capacity - inState.totwgt) * valToWgt.get(items.get(items_sorted.get(level+1)-1)-1));
+
             inState.valToWgt = valToWgt.get(level);
             
             System.out.println("\tinState: " + "\ti: " + items.get(level) + "\tv: " + values.get(level) + "\tw: " + weights.get(level) + "\tv2w: " + valToWgt.get(level));
@@ -146,7 +138,7 @@ class KnapsackBnB
 
             exState.totval = curState.totval;                       // exclude state
             exState.totwgt = curState.totwgt;
-            exState.bound = computeBound(exState, valToWgt, (capacity - exState.totwgt));
+            exState.bound = exState.totval + ((capacity - exState.totwgt) * valToWgt.get(items.get(items_sorted.get(level+1)-1)-1));
             exState.valToWgt = valToWgt.get(level);
             
             System.out.println("\texState: " + "\ti: " + items.get(level) + "\tv: " + values.get(level) + "\tw: " + weights.get(level) + "\tv2w: " + valToWgt.get(level));
@@ -162,13 +154,9 @@ class KnapsackBnB
             if (inState.bound > maxValue) {
                 Q.add(inState);
             }
-            if (exState.bound > curState.totval) {
+            if (exState.bound > maxValue) {
                 Q.add(exState);
             }
-
-
-
-
         }
     }
 }

@@ -44,7 +44,7 @@ class KnapsackAlgorithms
 
             // for testing smaller arrays
             ArrayList<Integer> t_i = new ArrayList<Integer>();
-            t_i.add(1); t_i.add(2); t_i.add(3); t_i.add(4); t_i.add(4); 
+            t_i.add(1); t_i.add(2); t_i.add(3); t_i.add(4); t_i.add(5); 
            ArrayList<Integer> t_v = new ArrayList<Integer>();
             t_v.add(4); t_v.add(1); t_v.add(2); t_v.add(3); t_v.add(5);
             ArrayList<Integer> t_w = new ArrayList<Integer>();
@@ -66,8 +66,8 @@ class KnapsackAlgorithms
                 case 4:
 
                     KnapsackBnB bnb = new KnapsackBnB();
-                    bnb.Solve(items, values, weights, capacity);
- //                   bnb.Solve(t_i, t_v, t_w, 5);
+ //                   bnb.Solve(items, values, weights, capacity);
+                    bnb.Solve(t_i, t_v, t_w, 5);
            }
 
         }
