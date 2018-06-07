@@ -131,12 +131,12 @@ class KnapsackBnB
         while ((curState = Q.poll()) != null) {    // are there more states in the tree to examine?
             int treeLvl = curState.lvl;               // current level in tree
 
+            treeLvl++;
             if (treeLvl >= n-1) {                     // are there more items we can pick up?
                 continue;
             }
 
             // go to the next level (contains the next best val to wgt ratio)
-            treeLvl++;
             System.out.println("Level: " + treeLvl);
             int itemId = (itemsList.get(curState.lvl + 1)).id - 1;     // offset by 1 bc item id's start at 1
             System.out.println("\tNext Level: " + treeLvl  + "\tMaxValue: " + maxValue);       // Test
@@ -145,7 +145,7 @@ class KnapsackBnB
             Node exState = new Node();
             inState.lvl = exState.lvl = treeLvl;
 
-            Item thisItem = itemsList.get(itemId);
+            Item thisItem = itemsList.get(treeLvl);
             thisItem.Print();
             System.out.println("\tcurState: ");
             curState.Print();
@@ -178,71 +178,5 @@ class KnapsackBnB
                 Q.add(exState);
             }
         }
-        /*
-        // setup
-        Node root = new Node();                 // setup starting point of tree
-        root.itemlvl = -1;
-        root.bound = capacity * valToWgt.get(items.get(items_sorted.get(0)-1)-1);   // offset to get index of item
-        Node curState = new Node();
-
-        PriorityQueue<Node> Q = new PriorityQueue<Node>();
-        Q.add(root);
-        int maxValue = 0;           // max value in knapsack found so far
-
-        
-        while ((curState = Q.poll()) != null) {    // are there more states in the tree to examine?
-            //System.out.println("QQQQQ:" +  Arrays.toString(Q.toArray()));
-            
-            int level = curState.itemlvl;       // level in tree
-            if (level >= n-1) {       // are there more items to pick up to?
-                System.out.println("max level has been reached at lvl: " + level);
-                continue;
-            }
-
-            level = curState.itemlvl;
-            System.out.println("Level: " + curState.itemlvl + "\tNext Level: " + (curState.itemlvl+1) + "\tMaxValue: " + maxValue);       // Test
-            // check out the next level of tree && examine options
-            //level++;
-            Node inState = new Node();
-            Node exState = new Node();
-            inState.itemlvl = exState.itemlvl = level;
-
-           // System.out.println("totwgt: " + curState.totwgt + " wgt: " + weights.get(level));
-            System.out.println("\tcurState: ");
-            curState.Print();
-                
-            inState.totval = curState.totval + values.get(level);       // include state
-            inState.totwgt = curState.totwgt + weights.get(level);
-            inState.bound = inState.totval + ((capacity - inState.totwgt) * valToWgt.get(items.get(items_sorted.get(level+1)-1)-1));
-
-            inState.valToWgt = valToWgt.get(level);
-            
-            System.out.println("\tinState: " + "\ti: " + items.get(level) + "\tv: " + values.get(level) + "\tw: " + weights.get(level) + "\tv2w: " + valToWgt.get(level));
-            inState.Print();
-
-
-            exState.totval = curState.totval;                       // exclude state
-            exState.totwgt = curState.totwgt;
-            exState.bound = exState.totval + ((capacity - exState.totwgt) * valToWgt.get(items.get(items_sorted.get(level+1)-1)-1));
-            exState.valToWgt = valToWgt.get(level);
-            
-            System.out.println("\texState: " + "\ti: " + items.get(level) + "\tv: " + values.get(level) + "\tw: " + weights.get(level) + "\tv2w: " + valToWgt.get(level));
-            exState.Print();
-            
-            //Update Maxvalue if this node is valid and increases maxValue
-            if (inState.totval > maxValue && inState.totwgt <= capacity) {
-                 maxValue = inState.totval;
-            }
-            System.out.println("\tUpdated Max value: " + maxValue);
-
-            // Decide whether it is worth traversing down these states further
-            if (inState.bound > maxValue) {
-                Q.add(inState);
-            }
-            if (exState.bound > maxValue) {
-                Q.add(exState);
-            }
-        }
-*/
     }
 }

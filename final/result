@@ -17,7 +17,7 @@ Item: 3	val: 2	wgt: 3	v2w: 0.6666667
 Item: 2	val: 1	wgt: 4	v2w: 0.25
 Level: 0
 	Next Level: 0	MaxValue: 0
-Item: 2	val: 1	wgt: 4	v2w: 0.25
+Item: 5	val: 5	wgt: 1	v2w: 5.0
 	curState: 
 		Tree Level: 	-1
 		Total Value: 	0
@@ -25,9 +25,9 @@ Item: 2	val: 1	wgt: 4	v2w: 0.25
 		Upper Bound: 	25.0
 
 	inState: 		Tree Level: 	0
-		Total Value: 	1
-		Total Weight: 	4
-		Upper Bound: 	2.5
+		Total Value: 	5
+		Total Weight: 	1
+		Upper Bound: 	11.0
 
 	exState: 
 		Tree Level: 	0
@@ -35,41 +35,41 @@ Item: 2	val: 1	wgt: 4	v2w: 0.25
 		Total Weight: 	0
 		Upper Bound: 	7.5
 
-	Updated Max value: 1
+	Updated Max value: 5
 Level: 1
-	Next Level: 1	MaxValue: 1
-Item: 3	val: 2	wgt: 3	v2w: 0.6666667
+	Next Level: 1	MaxValue: 5
+Item: 4	val: 3	wgt: 2	v2w: 1.5
 	curState: 
 		Tree Level: 	0
-		Total Value: 	1
-		Total Weight: 	4
-		Upper Bound: 	2.5
+		Total Value: 	5
+		Total Weight: 	1
+		Upper Bound: 	11.0
+
+	inState: 		Tree Level: 	1
+		Total Value: 	8
+		Total Weight: 	3
+		Upper Bound: 	9.6
+
+	exState: 
+		Tree Level: 	1
+		Total Value: 	5
+		Total Weight: 	1
+		Upper Bound: 	8.2
+
+	Updated Max value: 8
+Level: 1
+	Next Level: 1	MaxValue: 8
+Item: 4	val: 3	wgt: 2	v2w: 1.5
+	curState: 
+		Tree Level: 	0
+		Total Value: 	0
+		Total Weight: 	0
+		Upper Bound: 	7.5
 
 	inState: 		Tree Level: 	1
 		Total Value: 	3
-		Total Weight: 	7
-		Upper Bound: 	1.4
-
-	exState: 
-		Tree Level: 	1
-		Total Value: 	1
-		Total Weight: 	4
-		Upper Bound: 	1.8
-
-	Updated Max value: 1
-Level: 1
-	Next Level: 1	MaxValue: 1
-Item: 3	val: 2	wgt: 3	v2w: 0.6666667
-	curState: 
-		Tree Level: 	0
-		Total Value: 	0
-		Total Weight: 	0
-		Upper Bound: 	7.5
-
-	inState: 		Tree Level: 	1
-		Total Value: 	2
-		Total Weight: 	3
-		Upper Bound: 	3.6
+		Total Weight: 	2
+		Upper Bound: 	5.4
 
 	exState: 
 		Tree Level: 	1
@@ -77,99 +77,57 @@ Item: 3	val: 2	wgt: 3	v2w: 0.6666667
 		Total Weight: 	0
 		Upper Bound: 	4.0
 
-	Updated Max value: 2
+	Updated Max value: 8
 Level: 2
-	Next Level: 2	MaxValue: 2
-Item: 5	val: 5	wgt: 1	v2w: 5.0
-	curState: 
-		Tree Level: 	1
-		Total Value: 	1
-		Total Weight: 	4
-		Upper Bound: 	1.8
-
-	inState: 		Tree Level: 	2
-		Total Value: 	6
-		Total Weight: 	5
-		Upper Bound: 	6.0
-
-	exState: 
-		Tree Level: 	2
-		Total Value: 	1
-		Total Weight: 	4
-		Upper Bound: 	1.6666667
-
-	Updated Max value: 6
-Level: 2
-	Next Level: 2	MaxValue: 6
-Item: 5	val: 5	wgt: 1	v2w: 5.0
-	curState: 
-		Tree Level: 	1
-		Total Value: 	0
-		Total Weight: 	0
-		Upper Bound: 	4.0
-
-	inState: 		Tree Level: 	2
-		Total Value: 	5
-		Total Weight: 	1
-		Upper Bound: 	7.666667
-
-	exState: 
-		Tree Level: 	2
-		Total Value: 	0
-		Total Weight: 	0
-		Upper Bound: 	3.3333335
-
-	Updated Max value: 6
-Level: 2
-	Next Level: 2	MaxValue: 6
-Item: 5	val: 5	wgt: 1	v2w: 5.0
-	curState: 
-		Tree Level: 	1
-		Total Value: 	2
-		Total Weight: 	3
-		Upper Bound: 	3.6
-
-	inState: 		Tree Level: 	2
-		Total Value: 	7
-		Total Weight: 	4
-		Upper Bound: 	7.6666665
-
-	exState: 
-		Tree Level: 	2
-		Total Value: 	2
-		Total Weight: 	3
-		Upper Bound: 	3.3333335
-
-	Updated Max value: 7
-Level: 3
-	Next Level: 3	MaxValue: 7
+	Next Level: 2	MaxValue: 8
 Item: 1	val: 4	wgt: 5	v2w: 0.8
 	curState: 
-		Tree Level: 	2
+		Tree Level: 	1
 		Total Value: 	5
 		Total Weight: 	1
-		Upper Bound: 	7.666667
+		Upper Bound: 	8.2
 
-	inState: 		Tree Level: 	3
+	inState: 		Tree Level: 	2
 		Total Value: 	9
 		Total Weight: 	6
-		Upper Bound: 	8.75
+		Upper Bound: 	8.333333
 
 	exState: 
-		Tree Level: 	3
+		Tree Level: 	2
 		Total Value: 	5
 		Total Weight: 	1
-		Upper Bound: 	6.0
+		Upper Bound: 	7.666667
 
-	Updated Max value: 7
-Level: 3
-	Next Level: 3	MaxValue: 7
+	Updated Max value: 8
+Level: 2
+	Next Level: 2	MaxValue: 8
 Item: 1	val: 4	wgt: 5	v2w: 0.8
 	curState: 
+		Tree Level: 	1
+		Total Value: 	8
+		Total Weight: 	3
+		Upper Bound: 	9.6
+
+	inState: 		Tree Level: 	2
+		Total Value: 	12
+		Total Weight: 	8
+		Upper Bound: 	10.0
+
+	exState: 
 		Tree Level: 	2
-		Total Value: 	7
-		Total Weight: 	4
-		Upper Bound: 	7.6666665
+		Total Value: 	8
+		Total Weight: 	3
+		Upper Bound: 	9.333333
+
+	Updated Max value: 8
+Level: 3
+	Next Level: 3	MaxValue: 8
+Item: 3	val: 2	wgt: 3	v2w: 0.6666667
+	curState: 
+		Tree Level: 	2
+		Total Value: 	9
+		Total Weight: 	6
+		Upper Bound: 	8.333333
 
 	inState: 		Tree Level: 	3
 		Total Value: 	11
@@ -178,17 +136,50 @@ Item: 1	val: 4	wgt: 5	v2w: 0.8
 
 	exState: 
 		Tree Level: 	3
-		Total Value: 	7
-		Total Weight: 	4
-		Upper Bound: 	7.25
-
-	Updated Max value: 7
-Level: 4
-	Next Level: 4	MaxValue: 7
-Item: 4	val: 3	wgt: 2	v2w: 1.5
-	curState: 
-		Tree Level: 	3
 		Total Value: 	9
 		Total Weight: 	6
 		Upper Bound: 	8.75
 
+	Updated Max value: 8
+Level: 3
+	Next Level: 3	MaxValue: 8
+Item: 3	val: 2	wgt: 3	v2w: 0.6666667
+	curState: 
+		Tree Level: 	2
+		Total Value: 	8
+		Total Weight: 	3
+		Upper Bound: 	9.333333
+
+	inState: 		Tree Level: 	3
+		Total Value: 	10
+		Total Weight: 	6
+		Upper Bound: 	9.75
+
+	exState: 
+		Tree Level: 	3
+		Total Value: 	8
+		Total Weight: 	3
+		Upper Bound: 	8.5
+
+	Updated Max value: 8
+Level: 3
+	Next Level: 3	MaxValue: 8
+Item: 3	val: 2	wgt: 3	v2w: 0.6666667
+	curState: 
+		Tree Level: 	2
+		Total Value: 	12
+		Total Weight: 	8
+		Upper Bound: 	10.0
+
+	inState: 		Tree Level: 	3
+		Total Value: 	14
+		Total Weight: 	11
+		Upper Bound: 	12.5
+
+	exState: 
+		Tree Level: 	3
+		Total Value: 	12
+		Total Weight: 	8
+		Upper Bound: 	11.25
+
+	Updated Max value: 8
