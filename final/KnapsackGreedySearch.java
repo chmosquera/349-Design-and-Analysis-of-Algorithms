@@ -57,15 +57,6 @@ class KnapsackGreedySearch
             }
         }
 
-/*
-        System.out.println("Items sorted in decr. value:weight order");
-        System.out.println("item \t v:w");
-        for (int i = 0; i < n; i++) {
-            int itemID = items_sorted.get(i);
-            System.out.println(itemID + " \t " + valueToWeight.get(itemID-1));
-        }
-        */
-
         Collections.sort(solution);        // sort item no. by incr. order
         System.out.println("Greedy solution (not necessarily optimal): Value " + value + ", Weight " + weight);
         System.out.println(Arrays.toString(solution.toArray()));

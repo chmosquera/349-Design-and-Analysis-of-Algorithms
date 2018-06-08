@@ -18,12 +18,14 @@ class KnapsackBnB
 
         int lvl, totval, totwgt;
         float bound, valToWgt;
+        ArrayList<Integer> itemsCollected;
 
         Node() {
             this.lvl = 0;					// ID in tree
             this.totval = 0;			                // total value
             this.totwgt = 0;
             this.bound = 0;
+            this.itemsCollected = new ArrayList<Integer>();
         }
 
         public int compareTo(Node o) {
@@ -66,59 +68,24 @@ class KnapsackBnB
     public KnapsackBnB() {}
 
     public void Solve(ArrayList<Integer> items, ArrayList<Integer> values, ArrayList<Integer> weights, int capacity) {
+        // timer
+        long start = System.currentTimeMillis();
+        long end = start + 60*10*1000;         // after 5 minutes
+
         int n = items.size(); 
 
-        /* TESTING 
-        System.out.println("Before sort ...");
-        System.out.println("items:\t" + Arrays.toString(items.toArray()));
-        System.out.println("v to w:\t: " + Arrays.toString(valToWgt.toArray()));
-        System.out.println("After sort ...");
-        System.out.println("items:\t" + Arrays.toString(items_sorted.toArray()));
-        System.out.print("v to w:\t{");
-        for (int i = 0; i < n; i++) {
-//            System.out.print("i = " + i);
-            //System.out.println("items_sorted.get(i) = " + items_sorted.get(i));
-            System.out.print(valToWgt.get(items.get(items_sorted.get(i)-1)-1) + ", ");
-        }
-        System.out.println("}");
-        */
-
-        /* testing priority 1
-        PriorityQueue<Node> q = new PriorityQueue<Node>();
-        Node nk = new Node(); nk.valToWgt = 0.9f;
-        q.add(nk);
-        Node nl = new Node(); nl.valToWgt = 4.5f;
-        q.add(nl);
-        Node nd = new Node(); nd.valToWgt = 3.5f;
-        q.add(nd); 
-
-        for (int i = 0; i < 3; i++) {
-            Node qw = q.poll();
-            System.out.println(qw.valToWgt);
-        } */
-
-        
         // setup all items into node
-        System.out.println("List of items:");
         ArrayList<Item> itemsList = new ArrayList<Item>();
         for (int i = 0; i < n; i++) {
             float v2w = (float)values.get(i)/(float)weights.get(i);
             Item it = new Item(items.get(i), values.get(i), weights.get(i), v2w);
-            System.out.println("items id = : " + it.id);
             itemsList.add(it);
-            it.Print();
         }
 
         Collections.sort(itemsList);
 
-        // Sorting
-        System.out.println("List of items (sorted): ");
-        for (int i = 0; i < n; i++) {
-            (itemsList.get(i)).Print();
-        }
-        
-
         // setup
+        Node solution = new Node();
         Node root = new Node();
         root.lvl = -1;
         root.bound = capacity * (itemsList.get(0)).v2w;
@@ -137,46 +104,51 @@ class KnapsackBnB
             }
 
             // go to the next level (contains the next best val to wgt ratio)
-            System.out.println("Level: " + treeLvl);
-            int itemId = (itemsList.get(curState.lvl + 1)).id - 1;     // offset by 1 bc item id's start at 1
-            System.out.println("\tNext Level: " + treeLvl  + "\tMaxValue: " + maxValue);       // Test
+            int itemId = (itemsList.get(curState.lvl + 1)).id - 1;     // # of item we might pick up
 
             Node inState = new Node();
             Node exState = new Node();
             inState.lvl = exState.lvl = treeLvl;
 
             Item thisItem = itemsList.get(treeLvl);
-            thisItem.Print();
-            System.out.println("\tcurState: ");
-            curState.Print();
             
             inState.totval = curState.totval + thisItem.val;                // state includes item
             inState.totwgt = curState.totwgt + thisItem.wgt;
             inState.bound = inState.totval + ((capacity - inState.totwgt) * (itemsList.get(treeLvl+1)).v2w);
-
-            System.out.print("\tinState: ");
-            inState.Print();
+            inState.itemsCollected = new ArrayList<Integer>(curState.itemsCollected);
 
             exState.totval = curState.totval;                               // state excludes item
             exState.totwgt = curState.totwgt;
-            exState.bound = curState.totval + ((capacity - exState.totwgt) * (itemsList.get(treeLvl+1)).v2w);
-            
-            System.out.println("\texState: " );
-            exState.Print();
+            exState.bound = curState.totval + ((capacity - exState.totwgt) * (itemsList.get(treeLvl+1)).v2w); 
+            exState.itemsCollected = new ArrayList<Integer>(curState.itemsCollected);
 
-            //Update Maxvalue if this node is valid and increases maxValue
-            if (inState.totval > maxValue && inState.totwgt <= capacity) {
-                 maxValue = inState.totval;
+            // if item fits, add to knapsack
+            if (inState.totwgt <= capacity) {
+                inState.itemsCollected.add(itemId + 1);
+
+                // update solution if this state gives more optimal solution
+                if (inState.totval > solution.totval){  
+                    solution = inState;
+                }
             }
-            System.out.println("\tUpdated Max value: " + maxValue);
 
             // Decide whether it is worth traversing down these states further
-            if (inState.bound > maxValue) {
+            if (inState.bound > solution.totval) {
                 Q.add(inState);
             }
-            if (exState.bound > maxValue) {
+            if (exState.bound > solution.totval) {
                 Q.add(exState);
             }
+
+            // timer so algorithm doesn't run forever
+//            System.out.println(System.currentTimeMillis());
+            if (System.currentTimeMillis() > end) break;
         }
+
+        Collections.sort(solution.itemsCollected);        // sort item no. by incr. order
+        System.out.println("Using Branch and Bound the best feasible solution found: Value " + solution.totval + ", Weight " + solution.totwgt);
+        System.out.println(" as specified for the other approaches. ");
+        System.out.println(Arrays.toString(solution.itemsCollected.toArray()));
+
     }
 }

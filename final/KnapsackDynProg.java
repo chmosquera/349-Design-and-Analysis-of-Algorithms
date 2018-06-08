@@ -5,6 +5,7 @@ import java.util.Scanner;
 import java.io.*;
 import java.util.Arrays;
 import java.util.ArrayList;
+import java.util.*;
 import java.lang.*;
 
 // Final Assignment - Knapsack Algorithms - Dynamic Progrmaming
@@ -62,6 +63,7 @@ class KnapsackDynProg
             }
         }
       
+        Collections.sort(soln);        // sort item no. by incr. order
         System.out.println("Dynamic Programming solution: Value " + tot_value + ", Weight " + tot_weight);
         System.out.println(Arrays.toString(soln.toArray()));
         
