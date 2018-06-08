@@ -1,7 +1,3 @@
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.util.Scanner;
 import java.io.*;
 import java.util.Arrays;
 import java.util.ArrayList;
@@ -17,7 +13,6 @@ class KnapsackFullEnumeration
 
 
     public static void BruteForce(ArrayList<Integer> items, ArrayList<Integer> values, ArrayList<Integer> weights, int capacity) {
-    
         int n = items.size();
 
         // generate subsets

@@ -1,7 +1,3 @@
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.util.Scanner;
 import java.io.*;
 import java.util.Arrays;
 import java.util.ArrayList;
@@ -29,8 +25,7 @@ class KnapsackDynProg
         values.add(0,0);
         weights.add(0,0);
 
-        // bottom up approach - recursively compute the max value found for smaller caps
-        //      which will be used to computer max value for larger caps
+        // bottom up approach 
         for (int c = 1; c <= capacity; c++) {
             for (int i = 1; i <= n; i++) {
                 // can we pick up this item?

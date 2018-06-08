@@ -1,7 +1,3 @@
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.util.Scanner;
 import java.util.PriorityQueue;
 import java.util.*;
 import java.io.*;
@@ -9,8 +5,7 @@ import java.util.Arrays;
 import java.util.ArrayList;
 import java.lang.*;
 
-// Final Assignment - Knapsack Algorithms - Dynamic Progrmaming
-
+// Final Assignment - Knapsack Algorithms - Branch and Bound
 class KnapsackBnB
 {
 
@@ -33,14 +28,6 @@ class KnapsackBnB
             else if (this.valToWgt < o.valToWgt) return 1;
             return 0;
         }
-    
-        void Print() {
-            System.out.println("\t\tTree Level: \t" + lvl);
-            System.out.println("\t\tTotal Value: \t" + totval);
-            System.out.println("\t\tTotal Weight: \t" + totwgt);
-            System.out.println("\t\tUpper Bound: \t" + bound);
-            System.out.println();
-        }
     }
 
     public class Item implements Comparable<Item>{
@@ -59,9 +46,6 @@ class KnapsackBnB
             if (this.v2w > o.v2w) return -1;
             else if (this.v2w < o.v2w) return 1;
             return 0;
-        }
-        void Print() {
-            System.out.println("Item: " + id + "\tval: " + val + "\twgt: " + wgt + "\tv2w: " + v2w);
         }
     }
 
@@ -82,6 +66,7 @@ class KnapsackBnB
             itemsList.add(it);
         }
 
+        // sort in order of value to weight
         Collections.sort(itemsList);
 
         // setup
@@ -141,7 +126,6 @@ class KnapsackBnB
             }
 
             // timer so algorithm doesn't run forever
-//            System.out.println(System.currentTimeMillis());
             if (System.currentTimeMillis() > end) break;
         }
 
